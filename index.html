@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - Cửa hàng của chúng tôi</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #f5f5f5;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .product-price {
+            font-weight: bold;
+            color: #e44d26;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        /* Style cho navigation */
+        .nav-container {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: #4CAF50;
+        }
+
+        /* Style cho search box */
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box input {
+            padding: 8px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            width: 200px;
+        }
+
+        .search-box button {
+            padding: 8px 15px;
+            background: #4CAF50;
+            border: none;
+            color: white;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        /* Style cho cart badge */
+        .cart-icon {
+            position: relative;
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: #e44d26;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 0.8rem;
+        }
+
+        /* Style cho new product badge */
+        .new-badge {
+            background: #ff6b6b;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="container nav-menu">
+            <div class="nav-left">
+                <a href="index.html">Trang chủ</a>
+                <a href="dong-ho-nam.html">Nam</a>
+                <a href="#">Nữ</a>
+                <a href="#">G-Shock</a>
+                <a href="#">Edifice</a>
+                <a href="#">Vintage</a>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm đồng hồ...">
+                    <button>Tìm</button>
+                </div>
+                <a href="#" class="cart-icon">
+                    🛒 Giỏ hàng
+                    <span class="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <h1>Đồng Hồ Casio Chính Hãng</h1>
+            <p>Khám phá bộ sưu tập đồng hồ Casio đa dạng và chất lượng</p>
+            <div style="margin-top: 20px;">
+                <h3>Sản phẩm mới <span class="new-badge">NEW</span></h3>
+                <div class="products" style="padding: 20px 0;">
+                    <div class="product-card">
+                        <img src="casio-new-model.jpg" alt="Casio New Model" class="product-image">
+                        <h2 class="product-title">Casio GMW-B5000GD-9 <span class="new-badge">NEW</span></h2>
+                        <p class="product-description">Phiên bản đặc biệt với vỏ thép không gỉ mạ vàng, kết nối Bluetooth</p>
+                        <p class="product-price">15.990.000đ</p>
+                        <a href="#" class="btn">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="products">
+            <div class="product-card">
+                <img src="casio-g-shock.jpg" alt="Casio G-Shock" class="product-image">
+                <h2 class="product-title">Casio G-Shock GA-2100</h2>
+                <p class="product-description">Đồng hồ G-Shock với thiết kế mạnh mẽ, chống sốc, chống nước 200m. Tích hợp đèn LED, báo thức và bấm giờ thể thao.</p>
+                <p class="product-price">2.890.000đ</p>
+                <a href="#" class="btn">Xem chi tiết</a>
+            </div>
+
+            <div class="product-card">
+                <img src="casio-edifice.jpg" alt="Casio Edifice" class="product-image">
+                <h2 class="product-title">Casio Edifice EFR-S567</h2>
+                <p class="product-description">Đồng hồ Edifice phong cách thể thao sang trọng, mặt kính sapphire, chronograph đa chức năng.</p>
+                <p class="product-price">4.590.000đ</p>
+                <a href="#" class="btn">Xem chi tiết</a>
+            </div>
+
+            <div class="product-card">
+                <img src="casio-vintage.jpg" alt="Casio Vintage" class="product-image">
+                <h2 class="product-title">Casio Vintage A168</h2>
+                <p class="product-description">Đồng hồ Vintage điện tử cổ điển với thiết kế hoài cổ. Tích hợp đèn LED, lịch và báo thức.</p>
+                <p class="product-price">1.290.000đ</p>
+                <a href="#" class="btn">Xem chi tiết</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
