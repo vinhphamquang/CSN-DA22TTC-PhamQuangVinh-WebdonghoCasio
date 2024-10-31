@@ -7,83 +7,41 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <!-- Copy phần navigation từ trang chủ -->
-    </nav>
+    <div id="nav-placeholder"></div>
 
-    <header class="bg-light py-5 text-center">
+    <header class="py-5 text-center bg-light">
         <div class="container">
-            <h1>Đồng Hồ Nam</h1>
+            <h1 class="text-success">Đồng Hồ Nam</h1>
             <p>Bộ sưu tập đồng hồ dành cho phái mạnh</p>
+            <div class="mt-4"></div>
+                <h3>Sản phẩm mới <span class="badge bg-success">NEW</span></h3>
+                <div class="row mt-4">
+                    <div class="col-md-4 mx-auto">
+                        <div class="card h-100">
+                            <img src="casio-new-model.jpg" class="card-img-top" alt="Casio New Model">
+                            <div class="card-body text-center">
+                                <h2 class="h5">Casio GMW-B5000GD-9 <span class="badge bg-success">NEW</span></h2>
+                                <p class="card-text">Phiên bản đặc biệt với vỏ thép không gỉ mạ vàng, kết nối Bluetooth</p>
+                                <p class="fw-bold text-success">15.990.000đ</p>
+                                <a href="#" class="btn btn-success">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="bg-light py-4 mb-4">
-        <div class="container">
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h3 class="text-success">Gợi ý cho bạn</h3>
-                    <p>Dựa trên xu hướng hiện tại:</p>
-                    <div>
-                        <span class="badge bg-success me-2 mb-2">Thể thao</span>
-                        <span class="badge bg-success me-2 mb-2">Công sở</span>
-                        <span class="badge bg-success me-2 mb-2">Dự tiệc</span>
-                        <span class="badge bg-success me-2 mb-2">Đa năng</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <h3 class="h5">Phong cách</h3>
-                        <select class="form-select">
-                            <option value="">Tất cả phong cách</option>
-                            <option value="sport">Thể thao</option>
-                            <option value="business">Công sở</option>
-                            <option value="casual">Thường ngày</option>
-                            <option value="luxury">Sang trọng</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <h3 class="h5">Giá tiền</h3>
-                        <select class="form-select">
-                            <option value="">Tất cả mức giá</option>
-                            <option value="1">Dưới 2 triệu</option>
-                            <option value="2">2 - 5 triệu</option>
-                            <option value="3">5 - 10 triệu</option>
-                            <option value="4">Trên 10 triệu</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <h3 class="h5">Dòng sản phẩm</h3>
-                        <select class="form-select">
-                            <option value="">Tất cả dòng</option>
-                            <option value="g-shock">G-Shock</option>
-                            <option value="edifice">Edifice</option>
-                            <option value="vintage">Vintage</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <main class="container mb-5">
-        <h2 class="text-center my-4">Bộ Sưu Tập Đồng Hồ Nam</h2>
+    <main class="container py-5">
         <div class="row g-4">
             <!-- G-Shock -->
             <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="g-shock-ga2100.jpg" alt="G-Shock GA-2100" class="card-img-top">
+                <div class="card h-100 border-success">
+                    <img src="g-shock-ga2100.jpg" class="card-img-top" alt="G-Shock GA-2100">
                     <div class="card-body text-center">
                         <h2 class="h5">G-Shock GA-2100 Carbon Core</h2>
                         <p class="card-text">Thiết kế mỏng nhẹ, vỏ carbon, hoàn hảo cho người yêu thể thao</p>
-                        <p class="fw-bold text-danger">3.990.000đ</p>
+                        <p class="fw-bold text-success">3.990.000đ</p>
                         <a href="#" class="btn btn-success">Xem chi tiết</a>
                     </div>
                 </div>
@@ -91,12 +49,12 @@
 
             <!-- Edifice -->
             <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="edifice-eqb1000.jpg" alt="Edifice EQB-1000" class="card-img-top">
+                <div class="card h-100 border-success">
+                    <img src="edifice-eqb1000.jpg" class="card-img-top" alt="Edifice EQB-1000">
                     <div class="card-body text-center">
                         <h2 class="h5">Edifice EQB-1000 Bluetooth</h2>
                         <p class="card-text">Đồng hồ thông minh kết nối điện thoại, lịch lãm cho doanh nhân</p>
-                        <p class="fw-bold text-danger">8.590.000đ</p>
+                        <p class="fw-bold text-success">8.590.000đ</p>
                         <a href="#" class="btn btn-success">Xem chi tiết</a>
                     </div>
                 </div>
@@ -104,12 +62,12 @@
 
             <!-- Casio MTP -->
             <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="casio-mtp.jpg" alt="Casio MTP" class="card-img-top">
+                <div class="card h-100 border-success">
+                    <img src="casio-mtp.jpg" class="card-img-top" alt="Casio MTP">
                     <div class="card-body text-center">
                         <h2 class="h5">Casio MTP-1375L</h2>
                         <p class="card-text">Thiết kế cổ điển, phù hợp công sở, dây da cao cấp</p>
-                        <p class="fw-bold text-danger">1.890.000đ</p>
+                        <p class="fw-bold text-success">1.890.000đ</p>
                         <a href="#" class="btn btn-success">Xem chi tiết</a>
                     </div>
                 </div>
@@ -117,12 +75,12 @@
         </div>
     </main>
 
-    <footer class="bg-light py-3">
-        <div class="container text-center">
-            <p class="mb-0">© 2024 Đồng Hồ Casio Chính Hãng. Tất cả quyền được bảo lưu.</p>
-        </div>
-    </footer>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    $(function(){
+        $("#nav-placeholder").load("nav.html");
+    });
+    </script>
 </body>
 </html>

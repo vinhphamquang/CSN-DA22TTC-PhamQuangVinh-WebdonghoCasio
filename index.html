@@ -4,230 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ - Cửa hàng của chúng tôi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Thêm CSS cho hiệu ứng nhấp nháy -->
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .header {
-            text-align: center;
-            padding: 40px 0;
-            background-color: #f5f5f5;
-        }
-
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            padding: 40px 0;
-        }
-
-        .product-card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .product-image {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-            margin-bottom: 15px;
-        }
-
-        .product-title {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        .product-description {
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        .product-price {
-            font-weight: bold;
-            color: #e44d26;
-            font-size: 1.1rem;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-
-        /* Style cho navigation */
-        .nav-container {
-            background-color: #333;
-            padding: 10px 0;
-        }
-
-        .nav-menu {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-left {
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-right {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .nav-menu a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 15px;
-            transition: color 0.3s;
-        }
-
-        .nav-menu a:hover {
-            color: #4CAF50;
-        }
-
-        /* Style cho search box */
-        .search-box {
-            display: flex;
-            align-items: center;
-        }
-
-        .search-box input {
-            padding: 8px;
-            border: none;
-            border-radius: 4px 0 0 4px;
-            width: 200px;
-        }
-
-        .search-box button {
-            padding: 8px 15px;
-            background: #4CAF50;
-            border: none;
-            color: white;
-            border-radius: 0 4px 4px 0;
-            cursor: pointer;
-        }
-
-        /* Style cho cart badge */
-        .cart-icon {
-            position: relative;
-        }
-
-        .cart-badge {
-            position: absolute;
-            top: -8px;
-            right: -8px;
-            background: #e44d26;
-            color: white;
-            border-radius: 50%;
-            padding: 2px 6px;
-            font-size: 0.8rem;
-        }
-
-        /* Style cho new product badge */
-        .new-badge {
-            background: #ff6b6b;
-            color: white;
-            padding: 3px 8px;
-            border-radius: 3px;
-            font-size: 0.8rem;
-            margin-left: 5px;
+        
+        .badge-blink {
+            background-color: #dc3545 !important; /* Màu đỏ */
+            animation: blink 1s infinite;
         }
     </style>
 </head>
 <body>
-    <nav class="nav-container">
-        <div class="container nav-menu">
-            <div class="nav-left">
-                <a href="index.html">Trang chủ</a>
-                <a href="dong-ho-nam.html">Nam</a>
-                <a href="#">Nữ</a>
-                <a href="#">G-Shock</a>
-                <a href="#">Edifice</a>
-                <a href="#">Vintage</a>
-            </div>
-            <div class="nav-right">
-                <div class="search-box">
-                    <input type="text" placeholder="Tìm kiếm đồng hồ...">
-                    <button>Tìm</button>
-                </div>
-                <a href="#" class="cart-icon">
-                    🛒 Giỏ hàng
-                    <span class="cart-badge">0</span>
-                </a>
-            </div>
-        </div>
-    </nav>
+    <!-- Include navigation -->
+    <div id="nav-placeholder"></div>
 
-    <header class="header">
+    <header class="py-5 text-center bg-light">
         <div class="container">
-            <h1>Đồng Hồ Casio Chính Hãng</h1>
+            <h1 class="text-success">Đồng Hồ Casio Chính Hãng</h1>
             <p>Khám phá bộ sưu tập đồng hồ Casio đa dạng và chất lượng</p>
-            <div style="margin-top: 20px;">
-                <h3>Sản phẩm mới <span class="new-badge">NEW</span></h3>
-                <div class="products" style="padding: 20px 0;">
-                    <div class="product-card">
-                        <img src="casio-new-model.jpg" alt="Casio New Model" class="product-image">
-                        <h2 class="product-title">Casio GMW-B5000GD-9 <span class="new-badge">NEW</span></h2>
-                        <p class="product-description">Phiên bản đặc biệt với vỏ thép không gỉ mạ vàng, kết nối Bluetooth</p>
-                        <p class="product-price">15.990.000đ</p>
-                        <a href="#" class="btn">Xem chi tiết</a>
+            <div class="mt-4">
+                <h3>Sản phẩm mới <span class="badge badge-blink">NEW</span></h3>
+                <div class="row mt-4">
+                    <div class="col-md-4 mx-auto">
+                        <div class="card h-100">
+                            <img src="casio-new-model.jpg" class="card-img-top" alt="Casio New Model">
+                            <div class="card-body text-center">
+                                <h2 class="h5">Casio GMW-B5000GD-9 <span class="badge badge-blink">NEW</span></h2>
+                                <p class="card-text">Phiên bản đặc biệt với vỏ thép không gỉ mạ vàng, kết nối Bluetooth</p>
+                                <p class="fw-bold text-success">15.990.000đ</p>
+                                <a href="product-detail.html" class="btn btn-success">Xem chi tiết</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="container">
-        <section class="products">
-            <div class="product-card">
-                <img src="casio-g-shock.jpg" alt="Casio G-Shock" class="product-image">
-                <h2 class="product-title">Casio G-Shock GA-2100</h2>
-                <p class="product-description">Đồng hồ G-Shock với thiết kế mạnh mẽ, chống sốc, chống nước 200m. Tích hợp đèn LED, báo thức và bấm giờ thể thao.</p>
-                <p class="product-price">2.890.000đ</p>
-                <a href="#" class="btn">Xem chi tiết</a>
+    <main class="container py-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-success">
+                    <img src="casio-g-shock.jpg" class="card-img-top" alt="Casio G-Shock">
+                    <div class="card-body text-center">
+                        <h2 class="h5">Casio G-Shock GA-2100</h2>
+                        <p class="card-text">Đồng hồ G-Shock với thiết kế mạnh mẽ, chống sốc, chống nước 200m. Tích hợp đèn LED, báo thức và bấm giờ thể thao.</p>
+                        <p class="fw-bold text-success">2.890.000đ</p>
+                        <a href="ga-2100-detail.html" class="btn btn-success">Xem chi tiết</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="product-card">
-                <img src="casio-edifice.jpg" alt="Casio Edifice" class="product-image">
-                <h2 class="product-title">Casio Edifice EFR-S567</h2>
-                <p class="product-description">Đồng hồ Edifice phong cách thể thao sang trọng, mặt kính sapphire, chronograph đa chức năng.</p>
-                <p class="product-price">4.590.000đ</p>
-                <a href="#" class="btn">Xem chi tiết</a>
+            <div class="col-md-4">
+                <div class="card h-100 border-success">
+                    <img src="casio-edifice.jpg" class="card-img-top" alt="Casio Edifice">
+                    <div class="card-body text-center">
+                        <h2 class="h5">Casio Edifice EFR-S567</h2>
+                        <p class="card-text">Đồng hồ Edifice phong cách thể thao sang trọng, mặt kính sapphire, chronograph đa chức năng.</p>
+                        <p class="fw-bold text-success">4.590.000đ</p>
+                        <a href="efr-s567-detail.html" class="btn btn-success">Xem chi tiết</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="product-card">
-                <img src="casio-vintage.jpg" alt="Casio Vintage" class="product-image">
-                <h2 class="product-title">Casio Vintage A168</h2>
-                <p class="product-description">Đồng hồ Vintage điện tử cổ điển với thiết kế hoài cổ. Tích hợp đèn LED, lịch và báo thức.</p>
-                <p class="product-price">1.290.000đ</p>
-                <a href="#" class="btn">Xem chi tiết</a>
+            <div class="col-md-4">
+                <div class="card h-100 border-success">
+                    <img src="casio-vintage.jpg" class="card-img-top" alt="Casio Vintage">
+                    <div class="card-body text-center">
+                        <h2 class="h5">Casio Vintage A168</h2>
+                        <p class="card-text">Đồng hồ Vintage điện tử cổ điển với thiết kế hoài cổ. Tích hợp đèn LED, lịch và báo thức.</p>
+                        <p class="fw-bold text-success">1.290.000đ</p>
+                        <a href="a168-detail.html" class="btn btn-success">Xem chi tiết</a>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    $(function(){
+        $("#nav-placeholder").load("nav.html");
+        
+        // Gọi API lấy tất cả sản phẩm
+        fetch('http://localhost:3000/api/products')
+            .then(response => response.json())
+            .then(products => {
+                // Hiển thị sản phẩm mới
+                const newProducts = products.filter(p => p.isNew);
+                if(newProducts.length > 0) {
+                    const newProduct = newProducts[0];
+                    document.querySelector('.card-img-top').src = newProduct.image;
+                    document.querySelector('.card-body h2').innerHTML = 
+                        `${newProduct.name} <span class="badge badge-blink">NEW</span>`;
+                    document.querySelector('.card-text').textContent = newProduct.description;
+                    document.querySelector('.text-success').textContent = 
+                        new Intl.NumberFormat('vi-VN').format(newProduct.price) + 'đ';
+                }
+
+                // Hiển thị danh sách sản phẩm
+                const productList = document.querySelector('.row.g-4');
+                productList.innerHTML = products
+                    .filter(p => !p.isNew)
+                    .map(product => `
+                        <div class="col-md-4">
+                            <div class="card h-100 border-success">
+                                <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                                <div class="card-body text-center">
+                                    <h2 class="h5">${product.name}</h2>
+                                    <p class="card-text">${product.description}</p>
+                                    <p class="fw-bold text-success">
+                                        ${new Intl.NumberFormat('vi-VN').format(product.price)}đ
+                                    </p>
+                                    <a href="#" class="btn btn-success">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('');
+            })
+            .catch(error => console.error('Lỗi:', error));
+    });
+    </script>
 </body>
 </html>

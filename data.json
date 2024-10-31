@@ -1,0 +1,36 @@
+{
+  "products": {
+    "gshock": [
+      {
+        "id": "gba-900",
+        "name": "G-Shock GBA-9000",
+        "description": "Đồng hồ thông minh kết nối Bluetooth, theo dõi sức khỏe",
+        "price": 4990000,
+        "image": "gba-900.jpg",
+        "isNew": true,
+        "category": "gshock"
+      }
+    ],
+    "edifice": [
+      {
+        "id": "efr-569",
+        "name": "EFR-569 Chronograph",
+        "description": "Đồng hồ chronograph thể thao với thiết kế hiện đại",
+        "price": 5990000,
+        "image": "efr-569.jpg",
+        "isNew": true,
+        "category": "edifice"
+      }
+    ],
+    "vintage": [
+      {
+        "id": "a168",
+        "name": "A168 Classic Digital",
+        "description": "Thiết kế hoài cổ huyền thoại",
+        "price": 1290000,
+        "image": "a168.jpg",
+        "category": "vintage"
+      }
+    ]
+  }
+}
