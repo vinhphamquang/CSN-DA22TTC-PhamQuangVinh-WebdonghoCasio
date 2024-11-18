@@ -1,0 +1,14 @@
+{
+  "products": {
+    "featured": [
+      {
+        "id": "a168",
+        "name": "Casio Vintage A168",
+        "description": "Đồng hồ điện tử phong cách retro cổ điển",
+        "price": 1290000,
+        "image": "a168.jpg",
+        "category": "vintage"
+      }
+    ]
+  }
+} 

@@ -18,9 +18,10 @@ app.get('/api/products', (req, res) => {
 // API lấy sản phẩm theo danh mục
 app.get('/api/products/:category', (req, res) => {
   const category = req.params.category;
-  const products = data.products[category];
+  const allProducts = Object.values(data.products).flat();
+  const products = allProducts.filter(p => p.category === category);
   
-  if (!products) {
+  if (!products || products.length === 0) {
     return res.status(404).json({ message: 'Không tìm thấy danh mục' });
   }
   
@@ -38,6 +39,27 @@ app.get('/api/product/:id', (req, res) => {
   }
   
   res.json(product);
+});
+
+// API tìm kiếm sản phẩm
+app.get('/api/search', (req, res) => {
+  const searchTerm = req.query.q?.toLowerCase();
+  
+  if (!searchTerm) {
+    return res.status(400).json({ message: 'Vui lòng nhập từ khóa tìm kiếm' });
+  }
+
+  const allProducts = Object.values(data.products).flat();
+  console.log('Tất cả sản phẩm:', allProducts);
+
+  const results = allProducts.filter(product => 
+    product.name.toLowerCase().includes(searchTerm) || 
+    product.description.toLowerCase().includes(searchTerm)
+  );
+  
+  console.log('Kết quả tìm kiếm:', results);
+  
+  res.json(results);
 });
 
 app.listen(port, () => {

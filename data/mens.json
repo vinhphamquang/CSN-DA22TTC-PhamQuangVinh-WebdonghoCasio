@@ -1,0 +1,14 @@
+{
+  "products": {
+    "featured": [
+      {
+        "id": "mtp-1375",
+        "name": "Casio MTP-1375",
+        "description": "Đồng hồ nam dây thép không gỉ, thiết kế lịch lãm",
+        "price": 1990000,
+        "image": "mtp-1375.jpg",
+        "category": "mens"
+      }
+    ]
+  }
+} 

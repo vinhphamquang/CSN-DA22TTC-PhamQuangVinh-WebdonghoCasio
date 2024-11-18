@@ -12,25 +12,31 @@
                     <a class="nav-link" href="dong-ho-nu.html">Nữ</a> 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="g-shock.html">G-Shock</a> 
+                    <a class="nav-link" href="category.html?category=gshock">G-SHOCK</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="edifice.html">Edifice</a> 
+                    <a class="nav-link" href="category.html?category=edifice">EDIFICE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="vintage.html">Vintage</a> 
+                    <a class="nav-link" href="category.html?category=vintage">VINTAGE</a>
                 </li>
             </ul>
-            <form class="d-flex me-3">
-                <input class="form-control me-2" type="search" placeholder="Tìm kiếm đồng hồ...">
+            <form class="d-flex me-3" id="searchForm" onsubmit="handleSearch(event)">
+                <input class="form-control me-2" type="search" placeholder="Tìm kiếm đồng hồ..." id="searchInput">
                 <button class="btn btn-light" type="submit">Tìm</button>
             </form>
-            <div class="position-relative">
-                <a href="#" class="btn btn-light">
-                    🛒 Giỏ hàng
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
-                </a>
-            </div>
         </div>
     </div>
 </nav>
+
+<script>
+function handleSearch(event) {
+    event.preventDefault();
+    const searchTerm = document.getElementById('searchInput').value;
+    
+    if (searchTerm.trim()) {
+        // Chuyển hướng đến trang kết quả tìm kiếm với query parameter
+        window.location.href = `search.html?q=${encodeURIComponent(searchTerm)}`;
+    }
+}
+</script>

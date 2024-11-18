@@ -96,40 +96,41 @@
         fetch('http://localhost:3000/api/products')
             .then(response => response.json())
             .then(products => {
-                // Hiển thị sản phẩm mới
-                const newProducts = products.filter(p => p.isNew);
-                if(newProducts.length > 0) {
-                    const newProduct = newProducts[0];
-                    document.querySelector('.card-img-top').src = newProduct.image;
-                    document.querySelector('.card-body h2').innerHTML = 
-                        `${newProduct.name} <span class="badge badge-blink">NEW</span>`;
-                    document.querySelector('.card-text').textContent = newProduct.description;
-                    document.querySelector('.text-success').textContent = 
-                        new Intl.NumberFormat('vi-VN').format(newProduct.price) + 'đ';
+                // Cập nhật sản phẩm mới
+                const newProduct = products.find(p => p.isNew);
+                if(newProduct) {
+                    const newProductCard = document.querySelector('.col-md-4.mx-auto');
+                    if(newProductCard) {
+                        newProductCard.querySelector('img').src = newProduct.image;
+                        newProductCard.querySelector('.h5').innerHTML = 
+                            `${newProduct.name} <span class="badge badge-blink">NEW</span>`;
+                        newProductCard.querySelector('.card-text').textContent = newProduct.description;
+                        newProductCard.querySelector('.fw-bold.text-success').textContent = 
+                            new Intl.NumberFormat('vi-VN').format(newProduct.price) + 'đ';
+                        // Cập nhật link chi tiết sản phẩm
+                        newProductCard.querySelector('.btn.btn-success').href = `product-detail.html?id=${newProduct.id}`;
+                    }
                 }
 
-                // Hiển thị danh sách sản phẩm
-                const productList = document.querySelector('.row.g-4');
-                productList.innerHTML = products
-                    .filter(p => !p.isNew)
-                    .map(product => `
-                        <div class="col-md-4">
-                            <div class="card h-100 border-success">
-                                <img src="${product.image}" class="card-img-top" alt="${product.name}">
-                                <div class="card-body text-center">
-                                    <h2 class="h5">${product.name}</h2>
-                                    <p class="card-text">${product.description}</p>
-                                    <p class="fw-bold text-success">
-                                        ${new Intl.NumberFormat('vi-VN').format(product.price)}đ
-                                    </p>
-                                    <a href="#" class="btn btn-success">Xem chi tiết</a>
-                                </div>
-                            </div>
-                        </div>
-                    `).join('');
+                // Cập nhật các sản phẩm khác
+                const productCards = document.querySelectorAll('main .card');
+                const otherProducts = products.filter(p => !p.isNew);
+                otherProducts.forEach((product, index) => {
+                    if(index < productCards.length) {
+                        const card = productCards[index];
+                        card.querySelector('img').src = product.image;
+                        card.querySelector('.h5').textContent = product.name;
+                        card.querySelector('.card-text').textContent = product.description;
+                        card.querySelector('.fw-bold.text-success').textContent = 
+                            new Intl.NumberFormat('vi-VN').format(product.price) + 'đ';
+                        // Cập nhật link chi tiết sản phẩm
+                        card.querySelector('.btn.btn-success').href = `product-detail.html?id=${product.id}`;
+                    }
+                });
             })
             .catch(error => console.error('Lỗi:', error));
     });
     </script>
 </body>
+</html>
 </html>

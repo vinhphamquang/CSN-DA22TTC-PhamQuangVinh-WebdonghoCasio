@@ -78,6 +78,41 @@
     <script>
     $(function(){
         $("#nav-placeholder").load("nav.html");
+        
+        // Gọi API để lấy sản phẩm G-Shock
+        fetch('http://localhost:3000/api/products/gshock')
+            .then(response => response.json())
+            .then(products => {
+                // Cập nhật sản phẩm mới
+                const newProduct = products.find(p => p.isNew);
+                if(newProduct) {
+                    const newProductCard = document.querySelector('.col-md-4.mx-auto');
+                    if(newProductCard) {
+                        newProductCard.querySelector('img').src = newProduct.image;
+                        newProductCard.querySelector('.h5').innerHTML = 
+                            `${newProduct.name} <span class="badge bg-success">NEW</span>`;
+                        newProductCard.querySelector('.card-text').textContent = newProduct.description;
+                        newProductCard.querySelector('.fw-bold.text-success').textContent = 
+                            new Intl.NumberFormat('vi-VN').format(newProduct.price) + 'đ';
+                        newProductCard.querySelector('.btn').href = `product-detail.html?id=${newProduct.id}`;
+                    }
+                }
+
+                // Cập nhật các sản phẩm khác
+                const productCards = document.querySelectorAll('main .card');
+                products.forEach((product, index) => {
+                    if(!product.isNew && index < productCards.length) {
+                        const card = productCards[index];
+                        card.querySelector('img').src = product.image;
+                        card.querySelector('.h5').textContent = product.name;
+                        card.querySelector('.card-text').textContent = product.description;
+                        card.querySelector('.fw-bold.text-success').textContent = 
+                            new Intl.NumberFormat('vi-VN').format(product.price) + 'đ';
+                        card.querySelector('.btn').href = `product-detail.html?id=${product.id}`;
+                    }
+                });
+            })
+            .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
     });
     </script>
 </body>
