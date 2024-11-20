@@ -17,74 +17,118 @@
             background-color: #dc3545 !important; /* Màu đỏ */
             animation: blink 1s infinite;
         }
+
+        /* Thêm style cho video background */
+        .video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1000;
+            filter: brightness(0.5);
+        }
+
+        /* Style cho content để đảm bảo đọc được chữ */
+        .content-wrapper {
+            background: rgba(255, 255, 255, 0.9);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Điều chỉnh màu nền cho header */
+        header.bg-light {
+            background: rgba(255, 255, 255, 0.95) !important;
+        }
+
+        /* Style cho card để nổi bật hơn */
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 <body>
-    <!-- Include navigation -->
-    <div id="nav-placeholder"></div>
+    <!-- Thêm video background -->
+    <video autoplay muted loop class="video-background">
+        <source src="clock-background.mp4" type="video/mp4">
+    </video>
 
-    <header class="py-5 text-center bg-light">
-        <div class="container">
-            <h1 class="text-success">Đồng Hồ Casio Chính Hãng</h1>
-            <p>Khám phá bộ sưu tập đồng hồ Casio đa dạng và chất lượng</p>
-            <div class="mt-4">
-                <h3>Sản phẩm mới <span class="badge badge-blink">NEW</span></h3>
-                <div class="row mt-4">
-                    <div class="col-md-4 mx-auto">
-                        <div class="card h-100">
-                            <img src="casio-new-model.jpg" class="card-img-top" alt="Casio New Model">
-                            <div class="card-body text-center">
-                                <h2 class="h5">Casio GMW-B5000GD-9 <span class="badge badge-blink">NEW</span></h2>
-                                <p class="card-text">Phiên bản đặc biệt với vỏ thép không gỉ mạ vàng, kết nối Bluetooth</p>
-                                <p class="fw-bold text-success">15.990.000đ</p>
-                                <a href="product-detail.html" class="btn btn-success">Xem chi tiết</a>
+    <!-- Wrap tất cả content trong div có background semi-transparent -->
+    <div class="content-wrapper">
+        <!-- Include navigation -->
+        <div id="nav-placeholder"></div>
+
+        <header class="py-5 text-center bg-light">
+            <div class="container">
+                <h1 class="text-success">Đồng Hồ Casio Chính Hãng</h1>
+                <p>Khám phá bộ sưu tập đồng hồ Casio đa dạng và chất lượng</p>
+                <div class="mt-4">
+                    <h3>Sản phẩm mới <span class="badge badge-blink">NEW</span></h3>
+                    <div class="row mt-4">
+                        <div class="col-md-4 mx-auto">
+                            <div class="card h-100">
+                                <img src="casio-new-model.jpg" class="card-img-top" alt="Casio New Model">
+                                <div class="card-body text-center">
+                                    <h2 class="h5">Casio GMW-B5000GD-9 <span class="badge badge-blink">NEW</span></h2>
+                                    <p class="card-text">Phiên bản đặc biệt với vỏ thép không gỉ mạ vàng, kết nối Bluetooth</p>
+                                    <p class="fw-bold text-success">15.990.000đ</p>
+                                    <a href="product-detail.html" class="btn btn-success">Xem chi tiết</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main class="container py-5">
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100 border-success">
-                    <img src="casio-g-shock.jpg" class="card-img-top" alt="Casio G-Shock">
-                    <div class="card-body text-center">
-                        <h2 class="h5">Casio G-Shock GA-2100</h2>
-                        <p class="card-text">Đồng hồ G-Shock với thiết kế mạnh mẽ, chống sốc, chống nước 200m. Tích hợp đèn LED, báo thức và bấm giờ thể thao.</p>
-                        <p class="fw-bold text-success">2.890.000đ</p>
-                        <a href="ga-2100-detail.html" class="btn btn-success">Xem chi tiết</a>
+        <main class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-success">
+                        <img src="casio-g-shock.jpg" class="card-img-top" alt="Casio G-Shock">
+                        <div class="card-body text-center">
+                            <h2 class="h5">Casio G-Shock GA-2100</h2>
+                            <p class="card-text">Đồng hồ G-Shock với thiết kế mạnh mẽ, chống sốc, chống nước 200m. Tích hợp đèn LED, báo thức và bấm giờ thể thao.</p>
+                            <p class="fw-bold text-success">2.890.000đ</p>
+                            <a href="ga-2100-detail.html" class="btn btn-success">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-success">
+                        <img src="casio-edifice.jpg" class="card-img-top" alt="Casio Edifice">
+                        <div class="card-body text-center">
+                            <h2 class="h5">Casio Edifice EFR-S567</h2>
+                            <p class="card-text">Đồng hồ Edifice phong cách thể thao sang trọng, mặt kính sapphire, chronograph đa chức năng.</p>
+                            <p class="fw-bold text-success">4.590.000đ</p>
+                            <a href="efr-s567-detail.html" class="btn btn-success">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-success">
+                        <img src="casio-vintage.jpg" class="card-img-top" alt="Casio Vintage">
+                        <div class="card-body text-center">
+                            <h2 class="h5">Casio Vintage A168</h2>
+                            <p class="card-text">Đồng hồ Vintage điện tử cổ điển với thiết kế hoài cổ. Tích hợp đèn LED, lịch và báo thức.</p>
+                            <p class="fw-bold text-success">1.290.000đ</p>
+                            <a href="a168-detail.html" class="btn btn-success">Xem chi tiết</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 border-success">
-                    <img src="casio-edifice.jpg" class="card-img-top" alt="Casio Edifice">
-                    <div class="card-body text-center">
-                        <h2 class="h5">Casio Edifice EFR-S567</h2>
-                        <p class="card-text">Đồng hồ Edifice phong cách thể thao sang trọng, mặt kính sapphire, chronograph đa chức năng.</p>
-                        <p class="fw-bold text-success">4.590.000đ</p>
-                        <a href="efr-s567-detail.html" class="btn btn-success">Xem chi tiết</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 border-success">
-                    <img src="casio-vintage.jpg" class="card-img-top" alt="Casio Vintage">
-                    <div class="card-body text-center">
-                        <h2 class="h5">Casio Vintage A168</h2>
-                        <p class="card-text">Đồng hồ Vintage điện tử cổ điển với thiết kế hoài cổ. Tích hợp đèn LED, lịch và báo thức.</p>
-                        <p class="fw-bold text-success">1.290.000đ</p>
-                        <a href="a168-detail.html" class="btn btn-success">Xem chi tiết</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -132,5 +176,4 @@
     });
     </script>
 </body>
-</html>
 </html>
