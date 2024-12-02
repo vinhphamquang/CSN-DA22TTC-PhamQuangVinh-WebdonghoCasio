@@ -3,15 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sản phẩm - Đồng Hồ Casio</title>
+    <title>Sản phẩm - Casio Store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
+        /* Background và Container */
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            padding: 40px 20px;
+        }
+
+        /* Category Title */
+        .category-title {
+            color: #198754;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin: 50px 0 30px;
+            position: relative;
+            padding-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .category-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, #198754, #75c79d);
+            border-radius: 2px;
+        }
+
+        /* Product Card */
         .product-card {
-            transition: transform 0.3s ease;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212,175,55,0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
+
         .product-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(212,175,55,0.1);
         }
+
+        /* Product Image */
+        .product-image {
+            height: 280px;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+
+        .product-card:hover .product-image {
+            transform: scale(1.08);
+        }
+
+        /* Product Title */
+        .product-title {
+            font-family: 'Playfair Display', serif;
+            color: #d4af37;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 15px 0;
+            height: 2.8em;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        /* Product Description */
+        .product-description {
+            color: #6c757d;
+            font-size: 0.9rem;
+            height: 60px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        /* Product Price */
+        .product-price {
+            color: #silver;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 15px 0;
+            position: relative;
+            display: inline-block;
+        }
+
+        .product-price::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            right: -10px;
+            bottom: -5px;
+            height: 2px;
+            background: rgba(25, 135, 84, 0.2);
+            border-radius: 1px;
+        }
+
+        /* Detail Button */
+        .btn-detail {
+            background: linear-gradient(145deg, #d4af37, #c5a028);
+            border: none;
+            color: #1a1a1a;
+            padding: 10px 30px;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .btn-detail:hover {
+            background: #146c43;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(25, 135, 84, 0.3);
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .category-title {
+                font-size: 2rem;
+            }
+
+            .product-image {
+                height: 240px;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .product-card {
+            animation: fadeInUp 0.6s ease backwards;
+        }
+
+        .row > div:nth-child(1) .product-card { animation-delay: 0.1s; }
+        .row > div:nth-child(2) .product-card { animation-delay: 0.2s; }
+        .row > div:nth-child(3) .product-card { animation-delay: 0.3s; }
+        .row > div:nth-child(4) .product-card { animation-delay: 0.4s; }
     </style>
 </head>
 <body>
@@ -25,109 +181,559 @@
     </header>
 
     <main class="container py-5">
-        <h2 class="mb-4">Đồng Hồ Nam</h2>
+        <h2 class="category-title">Đồng Hồ Nam</h2>
         <div class="row g-4">
-            <!-- Sản phẩm Nam -->
-            <div class="col-md-4">
+            <!-- MTP-1375 -->
+            <div class="col-md-3">
                 <div class="card h-100 product-card">
-                    <img src="casio-men.jpg" class="card-img-top" alt="Casio Men">
+                    <img src="images/men/mtp-1375.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio MTP-1375">
                     <div class="card-body text-center">
-                        <h2 class="h5">Casio MTP-1375</h2>
-                        <p class="card-text">Đồng hồ nam dây thép không gỉ, thiết kế lịch lãm</p>
-                        <p class="fw-bold text-success">1.990.000đ</p>
-                        <a href="mtp-1375-detail.html" class="btn btn-success">Xem chi tiết</a>
+                        <h2 class="product-title">Casio MTP-1375D-7AVDF</h2>
+                        <p class="product-description">
+                            Dây thép không gỉ cao cấp, mặt số trắng tinh tế
+                            Chống nước 50m, kính khoáng cứng
+                            Lịch ngày và thứ tự động
+                        </p>
+                        <p class="product-price">1.990.000₫</p>
+                        <a href="/donghonam/mtp-1375d-detail.html" class="btn btn-detail">
+                            Xem chi tiết
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+
+            <!-- MTP-V002 -->
+            <div class="col-md-3">
                 <div class="card h-100 product-card">
-                    <img src="casio-men-2.jpg" class="card-img-top" alt="Casio Men 2">
+                    <img src="images/men/mtp-v002.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio MTP-V002">
                     <div class="card-body text-center">
-                        <h2 class="h5">Casio MTP-V002</h2>
-                        <p class="card-text">Đồng hồ nam dây da, mặt số đơn giản</p>
-                        <p class="fw-bold text-success">1.290.000đ</p>
-                        <a href="mtp-v002-detail.html" class="btn btn-success">Xem chi tiết</a>
+                        <h2 class="product-title">Casio MTP-V002L-1AUDF</h2>
+                        <p class="product-description">
+                            Dây da chính hãng màu đen sang trọng
+                            Mặt số đơn giản dễ đọc, kim dạ quang
+                            Chống nước nhẹ, kính cứng chống xước
+                        </p>
+                        <p class="product-price">1.290.000₫</p>
+                        <a href="/donghonam/mtp-v002-detail.html" class="btn btn-detail">
+                            Xem chi tiết
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MTP-1183 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/men/mtp-1183.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio MTP-1183">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio MTP-1183E-7ADF</h2>
+                        <p class="product-description">
+                            Dây da nâu sang trọng
+                            Mặt số trắng cổ điển
+                            Lịch ngày tiện lợi
+                        </p>
+                        <p class="product-price">1.690.000₫</p>
+                        <a href="mtp-1183-detail.html" class="btn btn-detail">
+                            Xem chi tiết
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MTP-V300 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/men/mtp-v300.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio MTP-V300">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio MTP-V300D-7AUDF</h2>
+                        <p class="product-description">
+                            Dây thép bạc sáng bóng
+                            Mặt số đa chức năng
+                            Chronograph 3 mắt
+                        </p>
+                        <p class="product-price">1.890.000₫</p>
+                        <a href="mtp-v300-detail.html" class="btn btn-detail">
+                            Xem chi tiết
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MTP-1384 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/men/mtp-1384.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio MTP-1384">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio MTP-1384D-1AVDF</h2>
+                        <p class="product-description">
+                            Thiết kế thể thao nam tính
+                            Mặt số đen cá tính
+                            Chống nước 50m
+                        </p>
+                        <p class="product-price">2.190.000₫</p>
+                        <a href="mtp-1384-detail.html" class="btn btn-detail">
+                            Xem chi tiết
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MTP-VD01 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/men/mtp-vd01.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio MTP-VD01">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio MTP-VD01B-1EVUDF</h2>
+                        <p class="product-description">
+                            Dây vải canvas bền bỉ
+                            Mặt số đen phong cách quân đội
+                            Kim dạ quang nổi bật
+                        </p>
+                        <p class="product-price">1.490.000₫</p>
+                        <a href="mtp-vd01-detail.html" class="btn btn-detail">
+                            Xem chi tiết
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MTP-1374 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/men/mtp-1374.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio MTP-1374">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio MTP-1374D-1AVDF</h2>
+                        <p class="product-description">
+                            Thiết kế thể thao nam tính
+                            Mặt số đen cá tính
+                            Chống nước 50m
+                        </p>
+                        <p class="product-price">2.190.000₫</p>
+                        <a href="mtp-1374-detail.html" class="btn btn-detail">
+                            Xem chi tiết
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <h2 class="mt-5 mb-4">Đồng Hồ Nữ</h2>
+        <h2 class="category-title">Đồng Hồ Nữ</h2>
         <div class="row g-4">
-            <!-- Sản phẩm Nữ -->
-            <div class="col-md-4">
+            <!-- LTP-1095 -->
+            <div class="col-md-3">
                 <div class="card h-100 product-card">
-                    <img src="casio-ladies.jpg" class="card-img-top" alt="Casio Ladies">
+                    <img src="images/ladies/ltp-1095.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio LTP-1095">
                     <div class="card-body text-center">
-                        <h2 class="h5">Casio LTP-1095</h2>
-                        <p class="card-text">Đồng hồ nữ dây da, mặt số nhỏ nhắn thanh lịch</p>
-                        <p class="fw-bold text-success">1.490.000đ</p>
-                        <a href="ltp-1095-detail.html" class="btn btn-success">Xem chi tiết</a>
+                        <h2 class="product-title">Casio LTP-1095E-7ADF</h2>
+                        <p class="product-description">
+                            Dây da trắng thanh lịch
+                            Mặt số ánh xà cừ
+                            Đính đá pha lê sang trọng
+                        </p>
+                        <p class="product-price">1.490.000₫</p>
+                        <a href="ltp-1095-detail.html" class="btn btn-detail">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+
+            <!-- LTP-VT01 -->
+            <div class="col-md-3">
                 <div class="card h-100 product-card">
-                    <img src="casio-ladies-2.jpg" class="card-img-top" alt="Casio Ladies 2">
+                    <img src="images/ladies/ltp-vt01.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio LTP-VT01">
                     <div class="card-body text-center">
-                        <h2 class="h5">Casio LTP-VT01</h2>
-                        <p class="card-text">Đồng hồ nữ dây thép không gỉ, mặt số tối giản</p>
-                        <p class="fw-bold text-success">1.690.000đ</p>
-                        <a href="ltp-vt01-detail.html" class="btn btn-success">Xem chi tiết</a>
+                        <h2 class="product-title">Casio LTP-VT01GL-1BUDF</h2>
+                        <p class="product-description">
+                            Dây da nâu vintage
+                            Mặt số xanh độc đáo
+                            Thiết kế nhỏ gọn nữ tính
+                        </p>
+                        <p class="product-price">1.690.000₫</p>
+                        <a href="ltp-vt01-detail.html" class="btn btn-detail">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LTP-1274 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/ladies/ltp-1274.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio LTP-1274">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio LTP-1274D-7ADF</h2>
+                        <p class="product-description">
+                            Dây thép không gỉ mảnh
+                            Mặt số trắng tinh tế
+                            Đính đá pha lê 12 múi giờ
+                        </p>
+                        <p class="product-price">1.590.000₫</p>
+                        <a href="ltp-1274-detail.html" class="btn btn-detail">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LTP-V007 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/ladies/ltp-v007.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio LTP-V007">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio LTP-V007L-7B2UDF</h2>
+                        <p class="product-description">
+                            Dây da nâu nhẹ nhàng
+                            Mặt số trắng đơn giản
+                            Kim xanh nổi bật
+                        </p>
+                        <p class="product-price">1.290.000₫</p>
+                        <a href="ltp-v007-detail.html" class="btn btn-detail">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LTP-1303 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/ladies/ltp-1303.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio LTP-1303">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio LTP-1303D-7BVDF</h2>
+                        <p class="product-description">
+                            Dây thép mạ bạc sang trọng
+                            Mặt số trắng đính đá
+                            Thiết kế mỏng nhẹ
+                        </p>
+                        <p class="product-price">1.790.000₫</p>
+                        <a href="ltp-1303-detail.html" class="btn btn-detail">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LTP-V300 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/ladies/ltp-v300.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio LTP-V300">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio LTP-V300D-4AUDF</h2>
+                        <p class="product-description">
+                            Dây thép mạ vàng hồng
+                            Mặt số hồng quyến rũ
+                            Chronograph 3 mắt
+                        </p>
+                        <p class="product-price">1.890.000₫</p>
+                        <a href="ltp-v300-detail.html" class="btn btn-detail">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LTP-1094 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/ladies/ltp-1094.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio LTP-1094">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio LTP-1094Q-7B8DF</h2>
+                        <p class="product-description">
+                            Dây da trắng thanh lịch
+                            Mặt số nhỏ gọn
+                            Thiết kế minimalist
+                        </p>
+                        <p class="product-price">1.490.000₫</p>
+                        <a href="ltp-1094-detail.html" class="btn btn-detail">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LTP-V005 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/ladies/ltp-v005.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio LTP-V005">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio LTP-V005G-9AUDF</h2>
+                        <p class="product-description">
+                            Dây thép mạ vàng
+                            Mặt số vàng sang trọng
+                            Kim đen tương phản
+                        </p>
+                        <p class="product-price">1.390.000₫</p>
+                        <a href="ltp-v005-detail.html" class="btn btn-detail">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <h2 class="mt-5 mb-4">G-SHOCK</h2>
+        <h2 class="category-title">G-SHOCK</h2>
         <div class="row g-4">
-            <!-- Sản phẩm G-SHOCK -->
-            <div class="col-md-4">
+            <!-- GA-2100 -->
+            <div class="col-md-3">
                 <div class="card h-100 product-card">
-                    <img src="casio-gshock.jpg" class="card-img-top" alt="Casio G-SHOCK">
+                    <img src="images/g-shock/ga-2100.jpg" 
+                         class="card-img-top product-image" 
+                         alt="G-Shock GA-2100">
                     <div class="card-body text-center">
-                        <h2 class="h5">G-Shock GA-2100</h2>
-                        <p class="card-text">Thiết kế mỏng nhẹ với vỏ Carbon Core Guard, chống sốc chuẩn G-Shock</p>
-                        <p class="fw-bold text-success">3.290.000đ</p>
-                        <a href="ga-2100-detail.html" class="btn btn-success">Xem chi tiết</a>
+                        <h2 class="product-title">G-Shock GA-2100-1A1DR</h2>
+                        <p class="product-description">
+                            Carbon Core Guard
+                            Thiết kế octagon độc đáo
+                            Chống sốc chuẩn G-SHOCK
+                        </p>
+                        <p class="product-price">3.290.000₫</p>
+                        <a href="ga-2100-detail.html" class="btn btn-detail">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+
+            <!-- DW-5600 -->
+            <div class="col-md-3">
                 <div class="card h-100 product-card">
-                    <img src="casio-gshock-2.jpg" class="card-img-top" alt="Casio G-SHOCK 2">
+                    <img src="images/g-shock/dw-5600.jpg" 
+                         class="card-img-top product-image" 
+                         alt="G-Shock DW-5600">
                     <div class="card-body text-center">
-                        <h2 class="h5">G-Shock DW-5600</h2>
-                        <p class="card-text">Thiết kế cổ điển, chống sốc, chống nước 200m</p>
-                        <p class="fw-bold text-success">2.590.000đ</p>
-                        <a href="dw-5600-detail.html" class="btn btn-success">Xem chi tiết</a>
+                        <h2 class="product-title">G-Shock DW-5600BB-1DR</h2>
+                        <p class="product-description">
+                            Thiết kế vuông cổ điển
+                            Full black stealth
+                            Chống nước 200m
+                        </p>
+                        <p class="product-price">2.590.000₫</p>
+                        <a href="dw-5600-detail.html" class="btn btn-detail">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GA-700 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/g-shock/ga-700.jpg" 
+                         class="card-img-top product-image" 
+                         alt="G-Shock GA-700">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">G-Shock GA-700-1BDR</h2>
+                        <p class="product-description">
+                            Super Illuminator LED
+                            Đồng hồ kỹ thuật số-analog
+                            5 báo thức hàng ngày
+                        </p>
+                        <p class="product-price">2.990.000₫</p>
+                        <a href="ga-700-detail.html" class="btn btn-detail">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GA-800 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/g-shock/ga-800.jpg" 
+                         class="card-img-top product-image" 
+                         alt="G-Shock GA-800">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">G-Shock GA-800SC-7ADR</h2>
+                        <p class="product-description">
+                            Màu trắng thể thao
+                            Bấm giờ 1/100 giây
+                            Lịch tự động
+                        </p>
+                        <p class="product-price">3.490.000₫</p>
+                        <a href="ga-800-detail.html" class="btn btn-detail">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GBA-800 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/g-shock/gba-800.jpg" 
+                         class="card-img-top product-image" 
+                         alt="G-Shock GBA-800">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">G-Shock GBA-800-1ADR</h2>
+                        <p class="product-description">
+                            Màu trắng thể thao
+                            Bấm giờ 1/100 giây
+                            Lịch tự động
+                        </p>
+                        <p class="product-price">3.490.000₫</p>
+                        <a href="gba-800-detail.html" class="btn btn-detail">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <h2 class="mt-5 mb-4">VINTAGE</h2>
+        <h2 class="category-title">VINTAGE</h2>
         <div class="row g-4">
-            <!-- Sản phẩm VINTAGE -->
-            <div class="col-md-4">
+            <!-- A168 -->
+            <div class="col-md-3">
                 <div class="card h-100 product-card">
-                    <img src="casio-vintage.jpg" class="card-img-top" alt="Casio Vintage">
+                    <img src="images/vintage/a168.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio Vintage A168">
                     <div class="card-body text-center">
-                        <h2 class="h5">Casio Vintage A168</h2>
-                        <p class="card-text">Đồng hồ điện tử phong cách retro cổ điển</p>
-                        <p class="fw-bold text-success">1.290.000đ</p>
-                        <a href="a168-detail.html" class="btn btn-success">Xem chi tiết</a>
+                        <h2 class="product-title">Casio Vintage A168WA-1WDF</h2>
+                        <p class="product-description">
+                            Dây đeo kim loại classic
+                            Đèn nền Electro Luminescence
+                            Báo thức đa chức năng
+                        </p>
+                        <p class="product-price">1.290.000₫</p>
+                        <a href="a168-detail.html" class="btn btn-detail">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+
+            <!-- F91W -->
+            <div class="col-md-3">
                 <div class="card h-100 product-card">
-                    <img src="casio-vintage-2.jpg" class="card-img-top" alt="Casio Vintage 2">
+                    <img src="images/vintage/f91w.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio F91W">
                     <div class="card-body text-center">
-                        <h2 class="h5">Casio Vintage F91W</h2>
-                        <p class="card-text">Thiết kế đơn giản, bền bỉ, giá cả phải chăng</p>
-                        <p class="fw-bold text-success">590.000đ</p>
-                        <a href="f91w-detail.html" class="btn btn-success">Xem chi tiết</a>
+                        <h2 class="product-title">Casio F91W-1DG</h2>
+                        <p class="product-description">
+                            Thiết kế nhỏ gọn
+                            Dây nhựa bền bỉ
+                            Stopwatch 1/100 giây
+                        </p>
+                        <p class="product-price">590.000₫</p>
+                        <a href="f91w-detail.html" class="btn btn-detail">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- A159 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/vintage/a159.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio A159">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio A159WAD-1DF</h2>
+                        <p class="product-description">
+                            Mặt số đính đá pha lê
+                            Dây đeo kim loại mảnh
+                            Thiết kế retro sang trọng
+                        </p>
+                        <p class="product-price">990.000₫</p>
+                        <a href="a159-detail.html" class="btn btn-detail">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B640 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/vintage/b640.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio B640">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio B640WC-5ADF</h2>
+                        <p class="product-description">
+                            Mặt số lớn dễ đọc
+                            Dây kim loại mạ vàng hồng
+                            Đèn LED siêu sáng
+                        </p>
+                        <p class="product-price">1.490.000₫</p>
+                        <a href="b640-detail.html" class="btn btn-detail">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- A700 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/vintage/a700.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio A700">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio A700W-1ADF</h2>
+                        <p class="product-description">
+                            Thiết kế siêu mỏng
+                            Dây kim loại bạc
+                            Mặt số đen tương phản
+                        </p>
+                        <p class="product-price">1.190.000₫</p>
+                        <a href="a700-detail.html" class="btn btn-detail">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LA670 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/vintage/la670.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio LA670">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio LA670WA-7DF</h2>
+                        <p class="product-description">
+                            Thiết kế nhỏ gọn cho nữ
+                            Dây kim loại mảnh
+                            Chức năng bấm giờ
+                        </p>
+                        <p class="product-price">890.000₫</p>
+                        <a href="la670-detail.html" class="btn btn-detail">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- A158 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/vintage/a158.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio A158">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio A158WA-1DF</h2>
+                        <p class="product-description">
+                            Thiết kế classic nguyên bản
+                            Dây kim loại truyền thống
+                            Chống nước nhẹ
+                        </p>
+                        <p class="product-price">890.000₫</p>
+                        <a href="a158-detail.html" class="btn btn-detail">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AQ-230 -->
+            <div class="col-md-3">
+                <div class="card h-100 product-card">
+                    <img src="images/vintage/aq-230.jpg" 
+                         class="card-img-top product-image" 
+                         alt="Casio AQ-230">
+                    <div class="card-body text-center">
+                        <h2 class="product-title">Casio AQ-230GA-9DMQ</h2>
+                        <p class="product-description">
+                            Kết hợp Analog-Digital
+                            Dây kim loại mạ vàng
+                            Lịch t động hoàn chỉnh
+                        </p>
+                        <p class="product-price">1.690.000₫</p>
+                        <a href="aq-230-detail.html" class="btn btn-detail">Xem chi tiết</a>
                     </div>
                 </div>
             </div>

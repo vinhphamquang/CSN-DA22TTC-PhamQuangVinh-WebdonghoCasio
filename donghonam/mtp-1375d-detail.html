@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casio MTP-1375D-7AVDF - Casio Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .product-gallery {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .product-image {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .product-image:hover {
+            transform: scale(1.05);
+        }
+
+        .thumbnail {
+            cursor: pointer;
+            opacity: 0.6;
+            transition: opacity 0.3s;
+        }
+
+        .thumbnail:hover, .thumbnail.active {
+            opacity: 1;
+        }
+
+        .spec-table {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: #198754;
+            margin-bottom: 1rem;
+        }
+
+        .price-tag {
+            font-size: 2rem;
+            color: #198754;
+            font-weight: bold;
+        }
+
+        .buy-button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 30px;
+            transition: all 0.3s;
+        }
+
+        .buy-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .sub-nav {
+            background: rgba(255, 255, 255, 0.95) !important;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .sub-nav .nav-link {
+            color: #495057;
+            font-size: 0.95rem;
+            padding: 0.5rem 1.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .sub-nav .nav-link:hover {
+            color: #198754;
+        }
+
+        /* Thêm style cho nav chính */
+        .nav-link {
+            position: relative;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-2px);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 80%;
+            left: 10%;
+        }
+
+        /* ... (thêm toàn bộ style từ nav.html) ... */
+
+        /* Giữ nguyên style hiện tại của trang */
+        .product-gallery {
+            /* ... */
+        }
+    </style>
+</head>
+<body>
+    <!-- Include navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-clock me-2"></i>Casio Store
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="fas fa-home me-1"></i> Trang chủ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../product.html">
+                            <i class="fas fa-watch me-1"></i> Sản phẩm
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">
+                            <i class="fas fa-envelope me-1"></i> Liên hệ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">
+                            <i class="fas fa-info-circle me-1"></i> Giới thiệu
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex search-form">
+                    <div class="input-group">
+                        <input class="form-control search-input" type="search" 
+                               placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                        <button class="btn btn-light search-btn" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="row">
+            <!-- Gallery Section -->
+            <div class="col-md-6">
+                <div class="product-gallery">
+                    <img src="images/mtp-1375d/main.jpg" class="product-image mb-4" id="mainImage" alt="MTP-1375D-7AVDF">
+                    <div class="row g-2">
+                        <div class="col-3">
+                            <img src="images/mtp-1375d/angle1.jpg" class="img-fluid thumbnail" alt="Góc nhìn 1">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/mtp-1375d/angle2.jpg" class="img-fluid thumbnail" alt="Góc nhìn 2">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/mtp-1375d/angle3.jpg" class="img-fluid thumbnail" alt="Góc nhìn 3">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/mtp-1375d/detail.jpg" class="img-fluid thumbnail" alt="Chi tiết">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Info Section -->
+            <div class="col-md-6">
+                <h1 class="mb-4">Casio MTP-1375D-7AVDF</h1>
+                <p class="lead mb-4">Đồng hồ nam dây kim loại với thiết kế thanh lịch, sang trọng</p>
+                <div class="price-tag mb-4">1.590.000₫</div>
+               
+
+                <!-- Quick Features -->
+                <div class="row mt-4 mb-4">
+                    <div class="col-md-3 col-6">
+                        <div class="text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <h5>Chống nước 50m</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h5>Kính khoáng Crystal</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                            <h5>Kim dạ quang</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h5>Bảo hành 1 năm</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specifications -->
+        <section class="mt-5">
+            <h2 class="mb-4">Thông số kỹ thuật</h2>
+            <div class="table-responsive spec-table">
+                <table class="table table-hover">
+                    <tbody>
+                        <tr>
+                            <th>Thương hiệu</th>
+                            <td>Casio</td>
+                        </tr>
+                        <tr>
+                            <th>Số hiệu sản phẩm</th>
+                            <td>MTP-1375D-7AVDF</td>
+                        </tr>
+                        <tr>
+                            <th>Dòng sản phẩm</th>
+                            <td>Casio Standard</td>
+                        </tr>
+                        <tr>
+                            <th>Xuất xứ</th>
+                            <td>Nhật Bản</td>
+                        </tr>
+                        <tr>
+                            <th>Kiểu máy</th>
+                            <td>Quartz (Pin)</td>
+                        </tr>
+                        <tr>
+                            <th>Chất liệu vỏ</th>
+                            <td>Thép không gỉ cao cấp</td>
+                        </tr>
+                        <tr>
+                            <th>Chất liệu dây</th>
+                            <td>Thép không gỉ đúc đặc</td>
+                        </tr>
+                        <tr>
+                            <th>Màu mặt số</th>
+                            <td>Trắng</td>
+                        </tr>
+                        <tr>
+                            <th>Đường kính mặt</th>
+                            <td>41.5mm</td>
+                        </tr>
+                        <tr>
+                            <th>Độ dày</th>
+                            <td>10.4mm</td>
+                        </tr>
+                        <tr>
+                            <th>Độ rộng dây</th>
+                            <td>22mm</td>
+                        </tr>
+                        <tr>
+                            <th>Chống nước</th>
+                            <td>5 ATM (50m) - Đi mưa, rửa tay, tắm</td>
+                        </tr>
+                        <tr>
+                            <th>Mặt kính</th>
+                            <td>Mineral Crystal (Kính khoáng chất)</td>
+                        </tr>
+                        <tr>
+                            <th>Khóa</th>
+                            <td>Khóa bấm gập 3 mắt</td>
+                        </tr>
+                        <tr>
+                            <th>Các tính năng khác</th>
+                            <td>Lịch ngày, Kim dạ quang</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Features Detail -->
+        <section class="mt-5">
+            <h2 class="mb-4">Tính năng nổi bật</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-crown feature-icon"></i>
+                            </div>
+                            <h5 class="card-title text-center">Thiết kế sang trọng</h5>
+                            <p class="card-text">Mặt số trắng tinh tế với các cọc số La Mã, kim giờ và kim phút được mạ bạc sáng bóng. Kích thước 41.5mm nam tính, hiện đại.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-link feature-icon"></i>
+                            </div>
+                            <h5 class="card-title text-center">Dây đeo cao cấp</h5>
+                            <p class="card-text">Dây đeo thép không gỉ đúc đặc với thiết kế mắt xích tinh xảo, độ bền cao, chống ăn mòn tốt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-shield-alt feature-icon"></i>
+                            </div>
+                            <h5 class="card-title text-center">Độ bền vượt trội</h5>
+                            <p class="card-text">Chống nước 50m, mặt kính khoáng chất chống trầy, bộ máy Quartz bền bỉ và chính xác cao.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    $(function(){
+        // Xử lý gallery ảnh
+        $('.thumbnail').click(function(){
+            $('#mainImage').attr('src', $(this).attr('src'));
+            $('.thumbnail').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+    </script>
+</body>
+</html>

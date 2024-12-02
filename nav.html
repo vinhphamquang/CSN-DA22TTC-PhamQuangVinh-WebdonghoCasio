@@ -1,24 +1,192 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="index.html">Casio Store</a>
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-clock me-2"></i>Casio QuangVinh
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Trang chủ</a>
+                    <a class="nav-link" href="product.html">
+                        <i class="fas fa-watch me-1"></i> Sản phẩm
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="product.html">Sản phẩm</a>
+                    <a class="nav-link" href="contact.html">
+                        <i class="fas fa-envelope me-1"></i> Liên hệ
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Liên hệ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">Giới thiệu</a>
+                    <a class="nav-link" href="about.html">
+                        <i class="fas fa-info-circle me-1"></i> Giới thiệu
+                    </a>
                 </li>
             </ul>
+            <form class="d-flex search-form">
+                <div class="input-group">
+                    <input class="form-control search-input" type="search" 
+                           placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                    <button class="btn btn-light search-btn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 </nav>
+
+<style>
+.nav-link {
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 80%;
+    left: 10%;
+}
+
+.nav-link i {
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover i {
+    transform: scale(1.2);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.navbar-brand i {
+    font-size: 1.2rem;
+}
+
+.search-form {
+    max-width: 300px;
+    width: 100%;
+}
+
+.search-input {
+    border: none;
+    border-radius: 20px 0 0 20px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    background: white;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+.search-btn {
+    border: none;
+    border-radius: 0 20px 20px 0;
+    padding: 0.5rem 1rem;
+    background: white;
+    color: #222222;
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+    background: #e9ecef;
+    color: #212529;
+}
+
+.search-btn i {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 991.98px) {
+    .search-form {
+        margin-top: 1rem;
+        max-width: 100%;
+    }
+    
+    .navbar-nav {
+        margin-bottom: 1rem !important;
+    }
+}
+
+.search-input:focus {
+    transform: scale(1.02);
+}
+
+.search-btn:hover i {
+    transform: scale(1.1);
+}
+
+.search-input::placeholder {
+    color: #6c757d;
+    opacity: 0.8;
+}
+
+.search-icon {
+    background: white;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 20px;
+}
+
+/* Thay đổi màu nền và style cho navbar */
+.navbar {
+    background: linear-gradient(145deg, #1a1a1a, #2d2d2d) !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: #d4af37 !important; /* Màu gold */
+}
+
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    color: #silver !important;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #d4af37 !important;
+    transform: translateY(-2px);
+}
+
+/* Style mới cho search form */
+.search-form .form-control {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(212,175,55,0.3);
+    color: white;
+}
+
+.search-btn {
+    background: linear-gradient(145deg, #d4af37, #c5a028);
+    border: none;
+    color: #1a1a1a;
+}
+</style>

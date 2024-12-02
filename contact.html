@@ -6,10 +6,13 @@
     <title>Liên hệ - Casio Store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         /* Gradient Background */
         body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #silver;
+            font-family: 'Roboto', sans-serif;
             min-height: 100vh;
         }
 
@@ -57,13 +60,13 @@
 
         /* Card Styles */
         .contact-card {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212,175,55,0.1);
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             padding: 30px;
             margin-bottom: 30px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -74,7 +77,9 @@
 
         /* Section Title */
         .section-title {
-            color: #198754;
+            font-family: 'Playfair Display', serif;
+            color: #d4af37;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
             font-weight: 700;
             margin-bottom: 30px;
             position: relative;
@@ -95,12 +100,12 @@
 
         /* Contact Info Items */
         .contact-info-item {
-            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+            border: 1px solid rgba(212,175,55,0.1);
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 25px;
             transition: all 0.3s ease;
-            border: 1px solid rgba(0, 0, 0, 0.05);
         }
 
         .contact-info-item:hover {
@@ -111,7 +116,7 @@
 
         .contact-icon {
             font-size: 2.5rem;
-            color: #198754;
+            color: #d4af37;
             margin-bottom: 20px;
             transition: transform 0.3s ease;
         }
@@ -164,6 +169,8 @@
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+            background: linear-gradient(145deg, #d4af37, #c5a028);
+            color: #1a1a1a;
         }
 
         .social-link::before {
@@ -258,6 +265,14 @@
                 height: 50px;
                 font-size: 1.2rem;
             }
+        }
+
+        /* Thêm divider trang trí */
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+            margin: 2rem auto;
+            width: 50%;
         }
     </style>
 </head>
