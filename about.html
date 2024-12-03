@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #000000;
+            color: #ffc107;
         }
 
         .hero-section {
@@ -23,11 +24,11 @@
         }
 
         .about-card {
-            background: white;
+            background: #1a1a1a;
             border-radius: 15px;
             padding: 40px;
             margin: 30px 0;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
             transition: transform 0.3s ease;
         }
 
@@ -36,7 +37,7 @@
         }
 
         .section-title {
-            color: #198754;
+            color: #ffc107;
             font-weight: 600;
             margin-bottom: 30px;
             text-align: center;
@@ -52,43 +53,44 @@
             transform: translateX(-50%);
             width: 60px;
             height: 3px;
-            background: #198754;
+            background: #ffc107;
         }
 
         .feature-box {
             text-align: center;
             padding: 25px;
             border-radius: 10px;
-            background: #f8f9fa;
+            background: #1a1a1a;
             transition: all 0.3s ease;
-            border: 1px solid #e9ecef;
+            border: 1px solid #333333;
         }
 
         .feature-box:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            border-color: #198754;
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+            border-color: #ffc107;
         }
 
         .feature-icon {
             font-size: 2.5rem;
-            color: #198754;
+            color: #ffc107;
             margin-bottom: 20px;
         }
 
         .milestone-counter {
             text-align: center;
             padding: 25px;
-            background: #198754;
+            background: #1a1a1a;
             border-radius: 10px;
-            color: white;
+            color: #ffc107;
             margin: 15px 0;
             transition: transform 0.3s ease;
+            border: 1px solid #333333;
         }
 
         .milestone-counter:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(25, 135, 84, 0.3);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
         }
 
         .counter-number {
@@ -195,17 +197,26 @@
             transform: translateY(-5px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
+
+        /* Điều chỉnh màu chữ cho các phần tử khác */
+        p {
+            color: #ffffff;
+        }
+
+        h4 {
+            color: #ffc107;
+        }
     </style>
 </head>
 <body>
     <div id="nav-placeholder"></div>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section" style="background: rgba(255, 255, 255, 0.9);">
         <div class="container">
             <div class="hero-content">
-                <h1 class="display-4 mb-4">Chào mừng đến với Casio Store</h1>
-                <p class="lead">Nơi cung cấp những sản phẩm đồng hồ chính hãng với chất lượng tốt nhất</p>
+                <h1 class="display-4 mb-4 text-warning fw-bold">Chào mừng đến với Casio QuangVinh</h1>
+                <p class="lead text-warning">Nơi cung cấp những sản phẩm đồng hồ chính hãng với chất lượng tốt nhất</p>
             </div>
         </div>
     </section>
@@ -215,10 +226,10 @@
         <!-- Giới thiệu -->
         <div class="about-card">
             <h2 class="section-title">Về chúng tôi</h2>
-            <p class="lead text-center mb-4">
+            <p class="lead text-center mb-4 text-dark">
                 Casio Store - Đại lý phân phối chính thức của Casio tại Việt Nam
             </p>
-            <p class="text-center">
+            <p class="text-center text-dark">
                 Với hơn 10 năm kinh nghiệm trong lĩnh vực đồng hồ, chúng tôi cam kết mang đến cho khách hàng những sản phẩm chất lượng nhất với giá cả hợp lý nhất. Đội ngũ nhân viên chuyên nghiệp, tận tâm luôn sẵn sàng tư vấn và hỗ trợ quý khách.
             </p>
         </div>
@@ -230,22 +241,22 @@
                 <div class="col-md-4">
                     <div class="feature-box">
                         <i class="fas fa-check-circle feature-icon"></i>
-                        <h4>Chất lượng</h4>
-                        <p>100% hàng chính hãng, bảo hành chính thức</p>
+                        <h4 style="color: #000000;">Chất lượng</h4>
+                        <p style="color: #000000;">100% hàng chính hãng, bảo hành chính thức</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-box">
                         <i class="fas fa-heart feature-icon"></i>
-                        <h4>Tận tâm</h4>
-                        <p>Dịch vụ chăm sóc khách hàng 24/7</p>
+                        <h4 style="color: #000000;">Tận tâm</h4>
+                        <p style="color: #000000;">Dịch vụ chăm sóc khách hàng 24/7</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-box">
                         <i class="fas fa-sync feature-icon"></i>
-                        <h4>Uy tín</h4>
-                        <p>Chính sách bảo hành và đổi trả minh bạch</p>
+                        <h4 style="color: #000000;">Uy tín</h4>
+                        <p style="color: #000000;">Chính sách bảo hành và đổi trả minh bạch</p>
                     </div>
                 </div>
             </div>
@@ -289,15 +300,15 @@
                 <div class="col-md-6">
                     <div class="feature-box">
                         <i class="fas fa-shield-alt feature-icon"></i>
-                        <h4>Bảo hành chính hãng</h4>
-                        <p>Tất cả sản phẩm được bảo hành 1-5 năm</p>
+                        <h4 style="color: #000000;">Bảo hành chính hãng</h4>
+                        <p style="color: #000000;">Tất cả sản phẩm được bảo hành 1-5 năm</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="feature-box">
                         <i class="fas fa-exchange-alt feature-icon"></i>
-                        <h4>Đổi trả miễn phí</h4>
-                        <p>Đổi trả trong 30 ngày nếu lỗi nhà sản xuất</p>
+                        <h4 style="color: #000000;">Đổi trả miễn phí</h4>
+                        <p style="color: #000000;">Đổi trả trong 30 ngày nếu lỗi nhà sản xuất</p>
                     </div>
                 </div>
             </div>
