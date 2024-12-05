@@ -156,37 +156,41 @@
 
 /* Thay đổi màu nền và style cho navbar */
 .navbar {
-    background: linear-gradient(145deg, #1a1a1a, #2d2d2d) !important;
+    background: var(--primary-color) !important;
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
 
 .navbar-brand {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
-    color: #d4af37 !important; /* Màu gold */
+    color: var(--beige-color) !important;
 }
 
 .nav-link {
     font-family: 'Roboto', sans-serif;
-    color: #silver !important;
+    color: white !important;
     transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #d4af37 !important;
+    color: var(--beige-color) !important;
     transform: translateY(-2px);
 }
 
 /* Style mới cho search form */
 .search-form .form-control {
     background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(212,175,55,0.3);
+    border: 1px solid var(--beige-color);
     color: white;
 }
 
 .search-btn {
-    background: linear-gradient(145deg, #d4af37, #c5a028);
+    background: var(--beige-color);
     border: none;
-    color: #1a1a1a;
+    color: var(--primary-color);
+}
+
+.search-btn:hover {
+    background: var(--beige-dark);
 }
 </style>

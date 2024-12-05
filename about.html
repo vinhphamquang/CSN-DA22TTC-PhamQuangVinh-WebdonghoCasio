@@ -8,13 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #1B365D;  /* Navy */
+            --beige-color: #E8DCC4;    /* Màu be */
+            --beige-dark: #D4C5A9;     /* Màu be đậm hơn */
+        }
+
         body {
-            background-color: #000000;
-            color: #ffc107;
+            background: linear-gradient(135deg, var(--beige-color) 0%, #fff 100%);
+            color: var(--primary-color);
         }
 
         .hero-section {
-            background: linear-gradient(rgba(25, 135, 84, 0.9), rgba(25, 135, 84, 0.7)), url('about-hero.jpg');
+            background: linear-gradient(rgba(27, 54, 93, 0.8), rgba(27, 54, 93, 0.6)), url('about-hero.jpg');
             background-size: cover;
             background-position: center;
             color: white;
@@ -24,12 +30,13 @@
         }
 
         .about-card {
-            background: #1a1a1a;
+            background: white;
             border-radius: 15px;
             padding: 40px;
             margin: 30px 0;
             box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
             transition: transform 0.3s ease;
+            border: 1px solid var(--beige-color);
         }
 
         .about-card:hover {
@@ -37,7 +44,7 @@
         }
 
         .section-title {
-            color: #ffc107;
+            color: var(--primary-color);
             font-weight: 600;
             margin-bottom: 30px;
             text-align: center;
@@ -53,39 +60,39 @@
             transform: translateX(-50%);
             width: 60px;
             height: 3px;
-            background: #ffc107;
+            background: var(--primary-color);
         }
 
         .feature-box {
             text-align: center;
             padding: 25px;
             border-radius: 10px;
-            background: #1a1a1a;
+            background: white;
             transition: all 0.3s ease;
-            border: 1px solid #333333;
+            border: 1px solid var(--beige-color);
         }
 
         .feature-box:hover {
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
-            border-color: #ffc107;
+            border-color: var(--primary-color);
         }
 
         .feature-icon {
             font-size: 2.5rem;
-            color: #ffc107;
+            color: var(--primary-color);
             margin-bottom: 20px;
         }
 
         .milestone-counter {
             text-align: center;
             padding: 25px;
-            background: #1a1a1a;
+            background: var(--primary-color);
             border-radius: 10px;
-            color: #ffc107;
+            color: var(--beige-color);
             margin: 15px 0;
             transition: transform 0.3s ease;
-            border: 1px solid #333333;
+            border: 1px solid var(--beige-color);
         }
 
         .milestone-counter:hover {
@@ -173,17 +180,17 @@
 
         /* Điều chỉnh style cho about page */
         .hero-section {
-            background: linear-gradient(rgba(25, 135, 84, 0.8), rgba(25, 135, 84, 0.6)), url('about-hero.jpg');
+            background: linear-gradient(rgba(27, 54, 93, 0.8), rgba(27, 54, 93, 0.6)), url('about-hero.jpg');
             backdrop-filter: blur(5px);
         }
 
         .feature-box {
-            background: rgba(255, 255, 255, 0.9);
+            background: white;
             backdrop-filter: blur(5px);
         }
 
         .milestone-counter {
-            background: rgba(25, 135, 84, 0.9);
+            background: var(--primary-color);
             backdrop-filter: blur(5px);
         }
 
@@ -204,7 +211,29 @@
         }
 
         h4 {
-            color: #ffc107;
+            color: var(--primary-color);
+        }
+
+        /* CSS cho butter */
+        .butter {
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 30px;
+        }
+
+        .butter h5 {
+            color: var(--beige-color);
+            margin-bottom: 20px;
+        }
+
+        .butter .social-links a {
+            color: var(--beige-color);
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .butter .social-links a:hover {
+            color: white;
         }
     </style>
 </head>
@@ -309,6 +338,31 @@
                         <i class="fas fa-exchange-alt feature-icon"></i>
                         <h4 style="color: #000000;">Đổi trả miễn phí</h4>
                         <p style="color: #000000;">Đổi trả trong 30 ngày nếu lỗi nhà sản xuất</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thêm thanh butter -->
+    <div class="butter">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Về chúng tôi</h5>
+                    <p>Chuyên cung cấp đồng hồ Casio chính hãng với giá tốt nhất thị trường</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Liên hệ</h5>
+                    <p>Email: info@casiostore.com</p>
+                    <p>Hotline: 1900 1234</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Theo dõi chúng tôi</h5>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>

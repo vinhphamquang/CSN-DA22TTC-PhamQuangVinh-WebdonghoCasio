@@ -147,6 +147,28 @@
             50% { opacity: 0.6; }
             100% { opacity: 1; }
         }
+
+        /* Xóa CSS cũ của fixed-butter và thêm CSS mới cho butter */
+        .butter {
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 30px;
+        }
+
+        .butter h5 {
+            color: var(--gold-color);
+            margin-bottom: 20px;
+        }
+
+        .butter .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .butter .social-links a:hover {
+            color: var(--gold-color);
+        }
     </style>
 </head>
 <body>
@@ -231,6 +253,30 @@
                 </div>
             </div>
         </main>
+    </div>
+
+    <div class="butter">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Về chúng tôi</h5>
+                    <p>Chuyên cung cấp đồng hồ Casio chính hãng với giá tốt nhất thị trường</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Liên hệ</h5>
+                    <p>Email: info@casiostore.com</p>
+                    <p>Hotline: 1900 1234</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Theo dõi chúng tôi</h5>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
