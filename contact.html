@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
+        /* Thêm biến CSS */
+        :root {
+            --primary-color: #1B365D;  /* Navy */
+            --beige-color: #E8DCC4;    /* Màu be */
+            --beige-dark: #D4C5A9;     /* Màu be đậm hơn */
+        }
+
         /* Gradient Background */
         body {
             background: linear-gradient(135deg, var(--beige-color) 0%, #fff 100%);
@@ -18,7 +25,8 @@
 
         /* Header Styles */
         .page-header {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('header-bg.jpg');
+            background: linear-gradient(rgba(27, 54, 93, 0.8), rgba(27, 54, 93, 0.6)),
+                        url('header-bg.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -56,6 +64,11 @@
             font-size: 1.2rem;
             animation: fadeInUp 1s ease 0.5s;
             animation-fill-mode: both;
+        }
+
+        /* Cập nhật text color trong header */
+        header h1, header p {
+            color: var(--beige-color);
         }
 
         /* Card Styles */
@@ -296,10 +309,10 @@
 <body>
     <div id="nav-placeholder"></div>
 
-    <header class="py-5 text-center bg-light">
+    <header class="py-5 text-center" style="background-color: var(--primary-color);">
         <div class="container">
-            <h1 class="text-warning">Liên hệ với chúng tôi</h1>
-            <p class="lead text-warning">Chúng tôi luôn sẵn sàng hỗ trợ và lắng nghe ý kiến của bạn</p>
+            <h1 class="text-white">Liên hệ với chúng tôi</h1>
+            <p class="lead text-white">Chúng tôi luôn sẵn sàng hỗ trợ và lắng nghe ý kiến của bạn</p>
         </div>
     </header>
 
@@ -315,7 +328,28 @@
                             <div class="contact-info-item">
                                 <i class="fas fa-store contact-icon"></i>
                                 <h4>Casio Store - Chi nhánh chính</h4>
-                                <p></p>
+                                <div class="store-locations">
+                                    <!-- Chi nhánh chính 1 -->
+                                    <div class="location-item">
+                                        <h5>Casio Flagship Store</h5>
+                                        <p><i class="fas fa-map-marker-alt"></i> Tầng 1, Saigon Centre, 65 Lê Lợi, Phường Bến Nghé, Quận 1, TP.HCM</p>
+                                        <p><i class="fas fa-phone"></i> 028.3821.0483</p>
+                                    </div>
+
+                                    <!-- Chi nhánh chính 2 -->
+                                    <div class="location-item">
+                                        <h5>Casio Center Nguyễn Trãi</h5>
+                                        <p><i class="fas fa-map-marker-alt"></i> 391 Nguyễn Trãi, Phường 7, Quận 5, TP.HCM</p>
+                                        <p><i class="fas fa-phone"></i> 028.3855.2112</p>
+                                    </div>
+
+                                    <!-- Chi nhánh chính 3 -->
+                                    <div class="location-item">
+                                        <h5>Casio Authorized Store</h5>
+                                        <p><i class="fas fa-map-marker-alt"></i> Tầng 1, Vincom Center Đồng Khởi, 72 Lê Thánh Tôn, Phường Bến Nghé, Quận 1, TP.HCM</p>
+                                        <p><i class="fas fa-phone"></i> 028.3827.1451</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="contact-info-item">
                                 <i class="fas fa-clock contact-icon"></i>

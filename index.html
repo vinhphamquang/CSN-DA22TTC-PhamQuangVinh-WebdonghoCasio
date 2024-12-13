@@ -11,15 +11,15 @@
     
     <style>
         :root {
-            --primary-color: #1a1a1a;
-            --gold-color: #D4AF37;
-            --silver-color: #C0C0C0;
+            --primary-color: #1B365D;  /* Navy */
+            --beige-color: #E8DCC4;    /* Màu be */
+            --beige-dark: #D4C5A9;     /* Màu be đậm hơn */
         }
 
         body {
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
-            color: #fff;
+            background: linear-gradient(135deg, var(--beige-color) 0%, #fff 100%);
+            color: var(--primary-color);
         }
 
         h1, h2, h3 {
@@ -28,7 +28,7 @@
 
         /* Header styling */
         header {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            background: linear-gradient(rgba(27, 54, 93, 0.8), rgba(27, 54, 93, 0.6)),
                         url('/img/luxury-watch-background.jpg') center/cover;
             padding: 100px 0;
             color: white;
@@ -36,23 +36,23 @@
         }
 
         header h1 {
-            color: var(--gold-color);
+            color: var(--beige-color);
             font-size: 3.5rem;
             margin-bottom: 20px;
         }
 
         /* Card styling */
         .card {
-            background: rgba(255, 255, 255, 0.1);
+            background: white;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid var(--beige-color);
             transition: all 0.3s ease;
         }
 
         .card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-            border-color: var(--gold-color);
+            box-shadow: 0 10px 20px rgba(27, 54, 93, 0.2);
+            border-color: var(--primary-color);
         }
 
         .card-body {
@@ -60,38 +60,94 @@
         }
 
         .card h2 {
-            color: var(--gold-color);
+            color: var(--primary-color);
             font-weight: 700;
         }
 
         /* Button styling */
         .btn-custom {
-            background: linear-gradient(45deg, var(--gold-color), var(--silver-color));
+            background: var(--primary-color);
             border: none;
-            color: var(--primary-color);
+            color: var(--beige-color);
             font-weight: 500;
             padding: 10px 25px;
             transition: all 0.3s ease;
         }
 
         .btn-custom:hover {
+            background: var(--beige-color);
+            color: var(--primary-color);
             transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+            box-shadow: 0 5px 15px rgba(27, 54, 93, 0.2);
         }
 
         /* Price styling */
         .price {
-            color: var(--gold-color);
+            color: var(--primary-color);
             font-size: 1.5rem;
             font-weight: 700;
         }
 
         /* Badge styling */
         .badge-blink {
-            background: linear-gradient(45deg, var(--gold-color), var(--silver-color)) !important;
-            color: var(--primary-color);
+            background: var(--primary-color) !important;
+            color: var(--beige-color);
             padding: 5px 15px;
             border-radius: 20px;
+        }
+
+        /* Style mới cho badge NEW */
+        .badge-blink.new {
+            background: #fff !important;
+            color: #FF0000 !important;
+            border: 2px solid #FF0000;
+            font-weight: bold;
+            padding: 6px 15px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+            animation: newBadge 2s infinite;
+            position: relative;
+            margin-left: 10px;
+            transform: translateY(-2px);
+        }
+
+        /* Hiệu ứng nhấp nháy và phát sáng */
+        @keyframes newBadge {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+            }
+            50% {
+                transform: scale(1.1);
+                box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+            }
+        }
+
+        /* Thêm hiệu ứng before để tạo glow effect */
+        .badge-blink.new::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #ff0000, #ff6b6b);
+            z-index: -1;
+            opacity: 0.3;
+            animation: glowEffect 2s infinite;
+        }
+
+        @keyframes glowEffect {
+            0% { opacity: 0.3; }
+            50% { opacity: 0.5; }
+            100% { opacity: 0.3; }
         }
 
         /* Hover effect cho ảnh */
@@ -106,7 +162,7 @@
         /* Thêm divider trang trí */
         .divider {
             height: 2px;
-            background: linear-gradient(90deg, transparent, var(--gold-color), transparent);
+            background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
             margin: 30px 0;
         }
 
@@ -128,13 +184,13 @@
 
         /* Special card styling */
         .special-card {
-            background: linear-gradient(145deg, rgba(212, 175, 55, 0.1), rgba(192, 192, 192, 0.1));
-            border: 2px solid var(--gold-color);
+            background: white;
+            border: 2px solid var(--primary-color);
         }
 
         .special-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 10px 30px rgba(27, 54, 93, 0.2);
         }
 
         /* Special badge styling */
@@ -156,18 +212,265 @@
         }
 
         .butter h5 {
-            color: var(--gold-color);
+            color: var(--beige-color);
             margin-bottom: 20px;
         }
 
         .butter .social-links a {
-            color: white;
+            color: var(--beige-color);
             font-size: 1.5rem;
             transition: color 0.3s ease;
         }
 
         .butter .social-links a:hover {
-            color: var(--gold-color);
+            color: white;
+        }
+
+        /* Video styling */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .feature-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            margin: 0 auto;
+            max-width: 500px; /* Giới hạn chiều rộng tối đa */
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-info {
+            padding: 1.5rem;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .video-info h5 {
+            color: var(--beige-color);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .video-info p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .video-card {
+                max-width: 450px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .video-card {
+                max-width: 100%;
+            }
+            
+            .video-info {
+                padding: 1rem;
+            }
+            
+            .video-info h5 {
+                font-size: 1.1rem;
+            }
+            
+            .video-info p {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Animation cho videos */
+        .video-card {
+            opacity: 0;
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .col-md-5:nth-child(2) .video-card {
+            animation-delay: 0.2s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Slideshow styles */
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .slideshow-container:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+        }
+
+        .slideshow-container::before {
+            content: 'Xem Sản Phẩm';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            z-index: 20;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .slideshow-container:hover::before {
+            opacity: 1;
+        }
+
+        .slide-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+            transform: scale(1.1);
+        }
+
+        .slide-image.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Nút điều khiển */
+        .slide-controls {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            z-index: 10;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .slideshow-container:hover .slide-controls {
+            opacity: 1;
+        }
+
+        .slide-prev, .slide-next {
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .slide-prev:hover, .slide-next:hover {
+            background: white;
+            transform: scale(1.1);
+        }
+
+        /* Dots navigation */
+        .slide-dots {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: white;
+            transform: scale(1.3);
+        }
+
+        /* Hover effect trên hình ảnh */
+        .slideshow-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, 
+                rgba(0,0,0,0) 0%,
+                rgba(0,0,0,0.2) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .slideshow-container:hover::after {
+            opacity: 1;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .slideshow-container {
+                height: 300px;
+                margin: 20px auto;
+                max-width: 300px;
+            }
+            
+            .col-md-2, .col-md-8 {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -182,24 +485,60 @@
                 <p class="lead">Khám phá bộ sưu tập đẳng cấp và sang trọng</p>
                 <div class="divider"></div>
                 
-                <!-- Sản phẩm đặc biệt -->
-                <div class="mt-4">
-                    <h3>Sản Phẩm Nổi Bật <span class="badge badge-blink">SPECIAL</span></h3>
-                    <div class="row mt-4">
-                        <div class="col-md-4 mx-auto">
-                            <div class="card h-100 special-card">
-                                <div class="overflow-hidden">
-                                    <img src="/img/gmw-b5000gd-9dr_2ae890bea7f24e71b5d178c646948aeb_master.jpg" class="card-img-top" alt="Casio New Model">
+                <div class="row justify-content-center align-items-center mt-4">
+                    <!-- Slideshow bên trái -->
+                    <div class="col-md-2">
+                        <a href="product.html" class="slideshow-link">
+                            <div class="slideshow-container">
+                                <div class="slide-controls">
+                                    <button class="slide-prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="slide-next"><i class="fas fa-chevron-right"></i></button>
                                 </div>
-                                <div class="card-body text-center">
-                                    <h2 class="h5">Casio GMW-B5000GD-9 <span class="badge badge-blink">NEW</span></h2>
-                                    <div class="divider"></div>
-                                    <p class="card-text">Phiên bản đặc biệt với vỏ thép không gỉ mạ vàng, kết nối Bluetooth</p>
-                                    <p class="price">15.990.000đ</p>
-                                    <a href="product-detail.html" class="btn btn-custom">Khám phá ngay</a>
-                                </div>
+                                <div class="slide-dots"></div>
+                                <img src="images/g-shock/DW-5600BB-1DR.webp" alt="Casio 1" class="slide-image active">
+                                <img src="/images/GA-2100-1A3DR.jpg" alt="Casio 2" class="slide-image">
+                                <img src="images/g-shock/GW-B5600-2DR.webp" alt="Casio 3" class="slide-image">
+                                <img src="images/g-shock/GBA-800-1ADR.webp" alt="Casio 4" class="slide-image">
+                                <img src="images/ladies/LTP-1095E-7ADF.webp" alt="Casio 5" class="slide-image">
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Video ở giữa -->
+                    <div class="col-md-8">
+                        <div class="video-card">
+                            <div class="video-container">
+                                <iframe class="feature-video" 
+                                        src="https://www.youtube.com/embed/gx2ueJYLsMM?autoplay=1&mute=1" 
+                                        title="Giới thiệu Đồng hồ Casio" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="video-info">
+                                <h5>Khám phá bộ sưu tập đồng hồ Casio</h5>
+                                <p>Tìm hiểu thêm về các tính năng độc đáo của đồng hồ Casio</p>
                             </div>
                         </div>
+                    </div>
+                    
+                    <!-- Slideshow bên phải -->
+                    <div class="col-md-2">
+                        <a href="product.html" class="slideshow-link">
+                            <div class="slideshow-container">
+                                <div class="slide-controls">
+                                    <button class="slide-prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="slide-next"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                                <div class="slide-dots"></div>
+                                <img src="images/ladies/LTP-V007L-7B2UDF.webp" alt="Casio 1" class="slide-image active">
+                                <img src="images/men/MTP-1183E-7ADF.webp" alt="Casio 2" class="slide-image">
+                                <img src="images/men/MTP-1375D-7AVDF.webp" alt="Casio 3" class="slide-image">
+                                <img src="images/vintage/F91W-1DG.webp" alt="Casio 4" class="slide-image">
+                                <img src="images/men/MTP-V002L-1AUDF.webp" alt="Casio 5" class="slide-image">
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -207,47 +546,62 @@
 
         <main class="container py-5">
             <div class="row g-4">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="card h-100">
                         <div class="overflow-hidden">
-                            <img src="/img/GA-2100-1A3DR.jpg" class="card-img-top" alt="Casio G-Shock">
+                            <img src="/images/gmw-b5000gd-9dr_2ae890bea7f24e71b5d178c646948aeb_master.jpg" class="card-img-top" alt="Casio GMW-B5000GD-9">
                         </div>
                         <div class="card-body text-center">
-                            <h2 class="h5">Casio G-Shock GA-2100 <span class="badge badge-blink">NEW</span></h2>
+                            <h2 class="h5">Casio GMW-B5000GD-9 <span class="badge badge-blink new">NEW</span></h2>
+                            <div class="divider"></div>
+                            <p class="card-text">Phiên bản đặc biệt với vỏ thép không gỉ mạ vàng, kết nối Bluetooth</p>
+                            <p class="price">15.990.000đ</p>
+                            <a href="product.html?id=123" class="btn btn-custom">Khám phá ngay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="overflow-hidden">
+                            <img src="/images/GA-2100-1A3DR.jpg" class="card-img-top" alt="Casio G-Shock">
+                        </div>
+                        <div class="card-body text-center">
+                            <h2 class="h5">Casio G-Shock GA-2100 <span class="badge badge-blink new">NEW</span></h2>
                             <div class="divider"></div>
                             <p class="card-text">Đồng hồ G-Shock với thiết kế mạnh mẽ, chống sốc, chống nước 200m.</p>
                             <p class="price">2.890.000đ</p>
-                            <a href="ga-2100-detail.html" class="btn btn-custom">Khám phá ngay</a>
+                            <a href="product.html?id=123" class="btn btn-custom">Khám phá ngay</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="card h-100">
                         <div class="overflow-hidden">
-                            <img src="/img/images.jpg" class="card-img-top" alt="Casio Edifice">
+                            <img src="/images/images.jpg" class="card-img-top" alt="Casio Edifice">
                         </div>
                         <div class="card-body text-center">
-                            <h2 class="h5">Casio Edifice EFR-S567 <span class="badge badge-blink">NEW</span></h2>
+                            <h2 class="h5">Casio Edifice EFR-S567 <span class="badge badge-blink new">NEW</span></h2>
                             <div class="divider"></div>
                             <p class="card-text">Đồng h Edifice phong cách thể thao sang trọng, mặt kính sapphire.</p>
                             <p class="price">4.590.000đ</p>
-                            <a href="efr-s567-detail.html" class="btn btn-custom">Khám phá ngay</a>
+                            <a href="product.html?id=123" class="btn btn-custom">Khám phá ngay</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="card h-100">
                         <div class="overflow-hidden">
-                            <img src="/img/images (1).jpg" class="card-img-top" alt="Casio Vintage">
+                            <img src="/images/images (1).jpg" class="card-img-top" alt="Casio Vintage">
                         </div>
                         <div class="card-body text-center">
-                            <h2 class="h5">Casio Vintage A168 <span class="badge badge-blink">NEW</span></h2>
+                            <h2 class="h5">Casio Vintage A168 <span class="badge badge-blink new">NEW</span></h2>
                             <div class="divider"></div>
                             <p class="card-text">Đồng hồ Vintage điện tử cổ điển với thiết kế hoài cổ.</p>
                             <p class="price">1.290.000đ</p>
-                            <a href="a168-detail.html" class="btn btn-custom">Khám phá ngay</a>
+                            <a href="product.html?id=123" class="btn btn-custom">Khám phá ngay</a>
                         </div>
                     </div>
                 </div>
@@ -322,6 +676,115 @@
                 });
             })
             .catch(error => console.error('Lỗi:', error));
+    });
+
+    // Slideshow functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const slideshowContainers = document.querySelectorAll('.slideshow-container');
+        
+        slideshowContainers.forEach(container => {
+            const slides = container.querySelectorAll('.slide-image');
+            const dotsContainer = container.querySelector('.slide-dots');
+            let currentSlide = 0;
+            let slideInterval;
+
+            // Tạo dots
+            slides.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(index));
+                dotsContainer.appendChild(dot);
+            });
+
+            const dots = container.querySelectorAll('.dot');
+
+            // Thêm điều khiển nút
+            container.querySelector('.slide-prev').addEventListener('click', (e) => {
+                e.preventDefault(); // Ngăn chặn chuyển trang
+                e.stopPropagation(); // Ngăn chặn sự kiện nổi bọt
+                prevSlide();
+                resetInterval();
+            });
+
+            container.querySelector('.slide-next').addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                nextSlide();
+                resetInterval();
+            });
+
+            // Thêm xử lý click cho dots
+            container.querySelectorAll('.dot').forEach((dot, index) => {
+                dot.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    goToSlide(index);
+                });
+            });
+
+            function updateSlide() {
+                slides.forEach(slide => slide.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                updateSlide();
+            }
+
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                updateSlide();
+            }
+
+            function goToSlide(index) {
+                currentSlide = index;
+                updateSlide();
+                resetInterval();
+            }
+
+            function resetInterval() {
+                clearInterval(slideInterval);
+                startInterval();
+            }
+
+            function startInterval() {
+                slideInterval = setInterval(nextSlide, 3000 + Math.random() * 1000);
+            }
+
+            // Thêm swipe functionality cho mobile
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            container.addEventListener('touchstart', e => {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+
+            container.addEventListener('touchend', e => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            });
+
+            function handleSwipe() {
+                const swipeThreshold = 50;
+                const diff = touchStartX - touchEndX;
+
+                if (Math.abs(diff) > swipeThreshold) {
+                    if (diff > 0) {
+                        nextSlide();
+                    } else {
+                        prevSlide();
+                    }
+                    resetInterval();
+                }
+            }
+
+            // Bắt đầu slideshow
+            startInterval();
+        });
     });
     </script>
 </body>

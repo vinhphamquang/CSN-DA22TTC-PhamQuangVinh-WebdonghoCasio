@@ -1,0 +1,419 @@
+{
+  "men_watches": [
+    {
+      "id": "mtp-1375",
+      "name": "Casio MTP-1375D-7AVDF",
+      "description": "Dây thép không gỉ cao cấp, mặt số trắng tinh tế. Chống nước 50m, kính khoáng cứng. Lịch ngày và thứ tự động",
+      "price": 1990000,
+      "image": "images/men/mtp-1375.jpg",
+      "detail_url": "/donghonam/mtp-1375d-detail.html"
+    },
+    {
+      "id": "mtp-v002",
+      "name": "Casio MTP-V002L-1AUDF",
+      "description": "Dây da chính hãng màu đen sang trọng. Mặt số đơn giản dễ đọc, kim dạ quang. Chống nước nhẹ, kính cứng chống xước",
+      "price": 1290000,
+      "image": "images/men/mtp-v002.jpg",
+      "detail_url": "/donghonam/mtp-v002-detail.html"
+    },
+    {
+      "id": "mtp-1183",
+      "name": "Casio MTP-1183E-7ADF",
+      "description": "Dây da nâu sang trọng. Mặt số trắng cổ điển. Lịch ngày tiện lợi",
+      "price": 1690000,
+      "image": "images/men/mtp-1183.jpg",
+      "detail_url": "mtp-1183-detail.html"
+    },
+    {
+      "id": "mtp-v300",
+      "name": "Casio MTP-V300D-7AUDF",
+      "description": "Dây thép bạc sáng bóng. Mặt số đa chức năng. Chronograph 3 mắt",
+      "price": 1890000,
+      "image": "images/men/mtp-v300.jpg",
+      "detail_url": "mtp-v300-detail.html"
+    }
+  ],
+  "ladies_watches": [
+    {
+      "id": "ltp-1095",
+      "name": "Casio LTP-1095E-7ADF",
+      "description": "Dây da trắng thanh lịch. Mặt số ánh xà cừ. Đính đá pha lê sang trọng",
+      "price": 1490000,
+      "image": "images/ladies/ltp-1095.jpg",
+      "detail_url": "ltp-1095-detail.html"
+    },
+    {
+      "id": "ltp-vt01",
+      "name": "Casio LTP-VT01GL-1BUDF",
+      "description": "Dây da nâu vintage. Mặt số xanh độc đáo. Thiết kế nhỏ gọn nữ tính",
+      "price": 1690000,
+      "image": "images/ladies/ltp-vt01.jpg",
+      "detail_url": "ltp-vt01-detail.html"
+    },
+    {
+      "id": "ltp-1274",
+      "name": "Casio LTP-1274D-7ADF",
+      "description": "Dây thép không gỉ mảnh. Mặt số trắng tinh tế. Đính đá pha lê 12 múi giờ",
+      "price": 1590000,
+      "image": "images/ladies/ltp-1274.jpg",
+      "detail_url": "ltp-1274-detail.html"
+    },
+    {
+      "id": "ltp-v007",
+      "name": "Casio LTP-V007L-7B2UDF",
+      "description": "Dây da nâu nhẹ nhàng. Mặt số trắng đơn giản. Kim xanh nổi bật",
+      "price": 1290000,
+      "image": "images/ladies/ltp-v007.jpg",
+      "detail_url": "ltp-v007-detail.html"
+    }
+  ],
+  "g_shock": [
+    {
+      "id": "ga-2100",
+      "name": "G-Shock GA-2100-1A1DR",
+      "description": "Carbon Core Guard. Thiết kế octagon độc đáo. Chống sốc chuẩn G-SHOCK",
+      "price": 3290000,
+      "image": "images/g-shock/ga-2100.jpg",
+      "detail_url": "ga-2100-detail.html"
+    },
+    {
+      "id": "dw-5600",
+      "name": "G-Shock DW-5600BB-1DR",
+      "description": "Thiết kế vuông cổ điển. Full black stealth. Chống nước 200m",
+      "price": 2590000,
+      "image": "images/g-shock/dw-5600.jpg",
+      "detail_url": "dw-5600-detail.html"
+    },
+    {
+      "id": "ga-700",
+      "name": "G-Shock GA-700-1BDR",
+      "description": "Super Illuminator LED. Đồng hồ kỹ thuật số-analog. 5 báo thức hàng ngày",
+      "price": 2990000,
+      "image": "images/g-shock/ga-700.jpg",
+      "detail_url": "ga-700-detail.html"
+    },
+    {
+      "id": "ga-800",
+      "name": "G-Shock GA-800SC-7ADR",
+      "description": "Màu trắng thể thao. Bấm giờ 1/100 giây. Lịch tự động",
+      "price": 3490000,
+      "image": "images/g-shock/ga-800.jpg",
+      "detail_url": "ga-800-detail.html"
+    }
+  ],
+  "vintage": [
+    {
+      "id": "a168",
+      "name": "Casio Vintage A168WA-1WDF",
+      "description": "Dây đeo kim loại classic. Đèn nền Electro Luminescence. Báo thức đa chức năng",
+      "price": 1290000,
+      "image": "images/vintage/a168.jpg",
+      "detail_url": "a168-detail.html"
+    },
+    {
+      "id": "f91w",
+      "name": "Casio F91W-1DG",
+      "description": "Thiết kế nhỏ gọn. Dây nhựa bền bỉ. Stopwatch 1/100 giây",
+      "price": 590000,
+      "image": "images/vintage/f91w.jpg",
+      "detail_url": "f91w-detail.html"
+    },
+    {
+      "id": "a159",
+      "name": "Casio A159WAD-1DF",
+      "description": "Mặt số đính đá pha lê. Dây đeo kim loại mảnh. Thiết kế retro sang trọng",
+      "price": 990000,
+      "image": "images/vintage/a159.jpg",
+      "detail_url": "a159-detail.html"
+    },
+    {
+      "id": "b640",
+      "name": "Casio B640WC-5ADF",
+      "description": "Mặt số lớn dễ đọc. Dây kim loại mạ vàng hồng. Đèn LED siêu sáng",
+      "price": 1490000,
+      "image": "images/vintage/b640.jpg",
+      "detail_url": "b640-detail.html"
+    }
+  ],
+  " product_details": {
+    "g_shock": [
+      {
+        "id": "ga-700",
+        "name": "G-Shock GA-700-1BDR",
+        "description": "Super Illuminator LED. Đồng hồ kỹ thuật số-analog. 5 báo thức hàng ngày",
+        "price": 2990000,
+        "images": [
+          "images/g-shock/ga-700/1.jpg",
+          "images/g-shock/ga-700/2.jpg",
+          "images/g-shock/ga-700/3.jpg",
+          "images/g-shock/ga-700/4.jpg"
+        ],
+        "specifications": {
+          "brand": "Casio G-Shock",
+          "model": "GA-700-1BDR",
+          "gender": "Nam",
+          "case_size": "53.4mm",
+          "case_thickness": "18.4mm",
+          "case_material": "Resin",
+          "band_material": "Resin",
+          "band_width": "26mm",
+          "glass": "Mineral Crystal",
+          "water_resistance": "20 ATM (200m)",
+          "movement": "Ana-Digi",
+          "features": [
+            "Super Illuminator LED",
+            "World Time",
+            "5 Daily Alarms",
+            "1/100-second stopwatch",
+            "Countdown timer",
+            "Auto calendar"
+          ]
+        },
+        "warranty": "5 năm chính hãng",
+        "origin": "Nhật Bản",
+        "included_items": [
+          "Đồng hồ",
+          "Hộp đựng chính hãng",
+          "Thẻ bảo hành",
+          "Sách hướng dẫn sử dụng"
+        ],
+        "detailed_description": {
+          "design": "GA-700-1BDR nổi bật với thiết kế 3D bold với nút bấm phía trước độc đáo. Kết hợp màn hình analog và digital cho khả năng hiển thị đa dạng.",
+          "features": "Trang bị hệ thống đèn Super Illuminator LED siêu sáng, 5 chế độ báo thức hàng ngày, và các tính năng đo thời gian chuyên nghiệp.",
+          "usage": "Lý tưởng cho các hoạt động thể thao và ngoài trời. Thiết kế mạnh mẽ phù hợp với phong cách năng động."
+        }
+      },
+      {
+        "id": "ga-800",
+        "name": "G-Shock GA-800SC-7ADR",
+        "description": "Màu trắng thể thao. Bấm giờ 1/100 giây. Lịch tự động",
+        "price": 3490000,
+        "images": [
+          "images/g-shock/ga-800/1.jpg",
+          "images/g-shock/ga-800/2.jpg",
+          "images/g-shock/ga-800/3.jpg",
+          "images/g-shock/ga-800/4.jpg"
+        ],
+        "specifications": {
+          "brand": "Casio G-Shock",
+          "model": "GA-800SC-7ADR",
+          "gender": "Nam",
+          "case_size": "54.1mm",
+          "case_thickness": "15.5mm",
+          "case_material": "Resin",
+          "band_material": "Resin",
+          "band_width": "25mm",
+          "glass": "Mineral Crystal",
+          "water_resistance": "20 ATM (200m)",
+          "movement": "Ana-Digi",
+          "features": [
+            "Double LED light",
+            "World Time",
+            "5 Daily Alarms",
+            "1/100-second stopwatch",
+            "Countdown timer",
+            "Auto calendar"
+          ]
+        },
+        "warranty": "5 năm chính hãng",
+        "origin": "Nhật Bản",
+        "included_items": [
+          "Đồng hồ",
+          "Hộp đựng chính hãng",
+          "Thẻ bảo hành",
+          "Sách hướng dẫn sử dụng"
+        ],
+        "detailed_description": {
+          "design": "GA-800SC-7ADR nổi bật với tông màu trắng thể thao. Thiết kế kết hợp giữa cổ điển và hiện đại với màn hình analog-digital.",
+          "features": "Trang bị đèn LED kép cho cả mặt số analog và digital, đầy đủ các tính năng đo thời gian và báo thức.",
+          "usage": "Phù hợp cho các hoạt động thể thao và đời sống hàng ngày. Màu trắng dễ dàng kết hợp với nhiều trang phục khác nhau."
+        }
+      }
+    ],
+    "vintage": [
+      {
+        "id": "a159",
+        "name": "Casio A159WAD-1DF",
+        "description": "Mặt số đính đá pha lê. Dây đeo kim loại mảnh. Thiết kế retro sang trọng",
+        "price": 990000,
+        "images": [
+          "images/vintage/a159/1.jpg",
+          "images/vintage/a159/2.jpg",
+          "images/vintage/a159/3.jpg",
+          "images/vintage/a159/4.jpg"
+        ],
+        "specifications": {
+          "brand": "Casio Vintage",
+          "model": "A159WAD-1DF",
+          "gender": "Unisex",
+          "case_size": "36.8mm",
+          "case_thickness": "8.2mm",
+          "case_material": "Thép không gỉ",
+          "band_material": "Thép không gỉ",
+          "band_width": "18mm",
+          "glass": "Acrylic",
+          "water_resistance": "Chống nước nhẹ",
+          "movement": "Digital Quartz",
+          "features": [
+            "Đính đá pha lê",
+            "Đèn LED",
+            "Lịch tự động",
+            "Báo thức",
+            "Bấm giờ"
+          ]
+        },
+        "warranty": "1 năm chính hãng",
+        "origin": "Nhật Bản",
+        "included_items": [
+          "Đồng hồ",
+          "Hộp đựng chính hãng",
+          "Thẻ bảo hành",
+          "Sách hướng dẫn sử dụng"
+        ],
+        "detailed_description": {
+          "design": "A159WAD-1DF nâng tầm phong cách retro với các viên đá pha lê trang trí quanh mặt số. Dây đeo kim loại mảnh tạo nên vẻ đẹp thanh lịch.",
+          "features": "Kết hợp giữa thiết kế vintage và điểm nhấn hiện đại với đá pha lê. Đầy đủ các tính năng cơ bản của dòng Vintage Digital.",
+          "usage": "Phù hợp cho cả nam và nữ yêu thích phong cách retro sang trọng. Lý tưởng cho các dịp bán trang trọng."
+        }
+      },
+      {
+        "id": "b640",
+        "name": "Casio B640WC-5ADF",
+        "description": "Mặt số lớn dễ đọc. Dây kim loại mạ vàng hồng. Đèn LED siêu sáng",
+        "price": 1490000,
+        "images": [
+          "images/vintage/b640/1.jpg",
+          "images/vintage/b640/2.jpg",
+          "images/vintage/b640/3.jpg",
+          "images/vintage/b640/4.jpg"
+        ],
+        "specifications": {
+          "brand": "Casio Vintage",
+          "model": "B640WC-5ADF",
+          "gender": "Unisex",
+          "case_size": "38.9mm",
+          "case_thickness": "9.4mm",
+          "case_material": "Thép không gỉ mạ vàng hồng",
+          "band_material": "Thép không gỉ mạ vàng hồng",
+          "band_width": "18mm",
+          "glass": "Acrylic",
+          "water_resistance": "Chống nước nhẹ",
+          "movement": "Digital Quartz",
+          "features": [
+            "LED siêu sáng",
+            "Lịch tự động",
+            "Báo thức đa chức năng",
+            "Bấm giờ 1/100 giây",
+            "Đèn nền tự động"
+          ]
+        },
+        "warranty": "1 năm chính hãng",
+        "origin": "Nhật Bản",
+        "included_items": [
+          "Đồng hồ",
+          "Hộp đựng chính hãng",
+          "Thẻ bảo hành",
+          "Sách hướng dẫn sử dụng"
+        ],
+        "detailed_description": {
+          "design": "B640WC-5ADF nổi bật với tông màu vàng hồng thời thượng. Mặt số lớn với màn hình LCD rõ ràng, dễ đọc trong mọi điều kiện.",
+          "features": "Trang bị đèn LED siêu sáng với chế độ tự động, các tính năng đo thời gian chính xác và lịch tự động.",
+          "usage": "Phù hợp cho người yêu thích phong cách retro hiện đại. Màu vàng hồng sang trọng phù hợp cho cả trang phục casual và semi-formal."
+        }
+      }
+    ],
+    "men_watches": [
+      {
+        "id": "mtp-v300",
+        "name": "Casio MTP-V300D-7AUDF", 
+        "description": "Dây thép bạc sáng bóng. Mặt số đa chức năng. Chronograph 3 mắt",
+        "price": 1890000,
+        "images": [
+          "images/men/mtp-v300/1.jpg",
+          "images/men/mtp-v300/2.jpg",
+          "images/men/mtp-v300/3.jpg",
+          "images/men/mtp-v300/4.jpg"
+        ],
+        "specifications": {
+          "brand": "Casio",
+          "model": "MTP-V300D-7AUDF",
+          "gender": "Nam",
+          "case_size": "43mm",
+          "case_thickness": "11mm",
+          "case_material": "Thép không gỉ",
+          "band_material": "Thép không gỉ",
+          "band_width": "22mm",
+          "glass": "Mineral Crystal",
+          "water_resistance": "5 ATM (50m)",
+          "movement": "Quartz",
+          "features": [
+            "Chronograph 3 mắt",
+            "Lịch ngày",
+            "Kim dạ quang",
+            "Dây thép đúc đặc"
+          ]
+        },
+        "warranty": "1 năm chính hãng",
+        "origin": "Nhật Bản",
+        "included_items": [
+          "Đồng hồ",
+          "Hộp đựng chính hãng",
+          "Thẻ bảo hành",
+          "Sách hướng dẫn sử dụng"
+        ],
+        "detailed_description": {
+          "design": "MTP-V300D-7AUDF nổi bật với thiết kế thể thao sang trọng, mặt số chronograph 3 mắt tinh tế. Dây đeo và vỏ máy thép không gỉ sáng bóng tạo vẻ nam tính.",
+          "features": "Trang bị chức năng chronograph đo thời gian, kim dạ quang và lịch ngày. Kính khoáng cứng chống xước tốt.",
+          "usage": "Phù hợp cho người yêu thích đồng hồ thể thao sang trọng. Lý tưởng cho cả trang phục công sở và casual."
+        }
+      }
+    ],
+    "ladies_watches": [
+      {
+        "id": "ltp-v007",
+        "name": "Casio LTP-V007L-7B2UDF",
+        "description": "Dây da nâu nhẹ nhàng. Mặt số trắng đơn giản. Kim xanh nổi bật",
+        "price": 1290000,
+        "images": [
+          "images/ladies/ltp-v007/1.jpg",
+          "images/ladies/ltp-v007/2.jpg",
+          "images/ladies/ltp-v007/3.jpg",
+          "images/ladies/ltp-v007/4.jpg"
+        ],
+        "specifications": {
+          "brand": "Casio",
+          "model": "LTP-V007L-7B2UDF",
+          "gender": "Nữ",
+          "case_size": "34mm",
+          "case_thickness": "7.5mm",
+          "case_material": "Thép không gỉ",
+          "band_material": "Dây da chính hãng",
+          "band_width": "16mm",
+          "glass": "Mineral Crystal",
+          "water_resistance": "3 ATM (30m)",
+          "movement": "Quartz",
+          "features": [
+            "Kim xanh độc đáo",
+            "Mặt số trắng",
+            "Dây da nâu",
+            "Thiết kế mỏng nhẹ"
+          ]
+        },
+        "warranty": "1 năm chính hãng",
+        "origin": "Nhật Bản",
+        "included_items": [
+          "Đồng hồ",
+          "Hộp đựng chính hãng",
+          "Thẻ bảo hành",
+          "Sách hướng dẫn sử dụng"
+        ],
+        "detailed_description": {
+          "design": "LTP-V007L-7B2UDF mang thiết kế tối giản với mặt số trắng tinh tế, điểm nhấn là bộ kim màu xanh độc đáo. Dây da nâu mềm mại tạo cảm giác thoải mái khi đeo.",
+          "features": "Thiết kế mỏng nhẹ chỉ 7.5mm, kính khoáng cứng bảo vệ mặt số. Bộ máy Quartz Nhật Bản đảm bảo độ chính xác cao.",
+          "usage": "Phù hợp cho các quý cô yêu thích phong cách đơn giản, tinh tế. Dễ dàng kết hợp với trang phục hàng ngày hoặc công sở."
+        }
+      }
+    ]
+    
+  }
+} 

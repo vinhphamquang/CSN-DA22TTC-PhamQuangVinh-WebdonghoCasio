@@ -1,34 +1,33 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg">
     <div class="container">
         <a class="navbar-brand" href="index.html">
             <i class="fas fa-clock me-2"></i>Casio QuangVinh
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="product.html">
-                        <i class="fas fa-watch me-1"></i> Sản phẩm
+                        <i class="fas fa-watch me-1"></i>Sản phẩm
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">
-                        <i class="fas fa-envelope me-1"></i> Liên hệ
+                        <i class="fas fa-envelope me-1"></i>Liên hệ
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">
-                        <i class="fas fa-info-circle me-1"></i> Giới thiệu
+                        <i class="fas fa-info-circle me-1"></i>Giới thiệu
                     </a>
                 </li>
             </ul>
             <form class="d-flex search-form">
                 <div class="input-group">
-                    <input class="form-control search-input" type="search" 
-                           placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
-                    <button class="btn btn-light search-btn" type="submit">
+                    <input class="form-control" type="search" placeholder="Tìm kiếm...">
+                    <button class="btn search-btn" type="submit">
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
@@ -38,159 +37,122 @@
 </nav>
 
 <style>
-.nav-link {
-    position: relative;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-}
+    .navbar {
+        background: var(--primary-color);
+        padding: 15px 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
 
-.nav-link:hover {
-    transform: translateY(-2px);
-}
+    .navbar-brand {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--beige-color) !important;
+        letter-spacing: 1px;
+    }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: white;
-    transition: all 0.3s ease;
-}
+    .navbar-brand i {
+        color: var(--beige-color);
+        font-size: 1.5rem;
+    }
 
-.nav-link:hover::after {
-    width: 80%;
-    left: 10%;
-}
+    .nav-item {
+        margin: 0 10px;
+    }
 
-.nav-link i {
-    transition: transform 0.3s ease;
-}
+    .nav-link {
+        color: var(--beige-color) !important;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 8px 15px;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+    }
 
-.nav-link:hover i {
-    transform: scale(1.2);
-}
+    .nav-link:hover {
+        background: rgba(232, 220, 196, 0.1);
+        transform: translateY(-2px);
+    }
 
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    transition: all 0.3s ease;
-}
+    .nav-link i {
+        font-size: 1rem;
+        transition: transform 0.3s ease;
+    }
 
-.navbar-brand:hover {
-    transform: scale(1.05);
-}
+    .nav-link:hover i {
+        transform: scale(1.2);
+    }
 
-.navbar-brand i {
-    font-size: 1.2rem;
-}
-
-.search-form {
-    max-width: 300px;
-    width: 100%;
-}
-
-.search-input {
-    border: none;
-    border-radius: 20px 0 0 20px;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    background: rgba(255, 255, 255, 0.9);
-    transition: all 0.3s ease;
-}
-
-.search-input:focus {
-    background: white;
-    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
-}
-
-.search-btn {
-    border: none;
-    border-radius: 0 20px 20px 0;
-    padding: 0.5rem 1rem;
-    background: white;
-    color: #222222;
-    transition: all 0.3s ease;
-}
-
-.search-btn:hover {
-    background: #e9ecef;
-    color: #212529;
-}
-
-.search-btn i {
-    font-size: 0.9rem;
-}
-
-@media (max-width: 991.98px) {
+    /* Search form styling */
     .search-form {
-        margin-top: 1rem;
-        max-width: 100%;
+        position: relative;
+        width: 300px;
     }
-    
-    .navbar-nav {
-        margin-bottom: 1rem !important;
+
+    .search-form .form-control {
+        background: rgba(255,255,255,0.1);
+        border: 1px solid var(--beige-color);
+        color: var(--beige-color);
+        border-radius: 25px 0 0 25px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
-}
 
-.search-input:focus {
-    transform: scale(1.02);
-}
+    .search-form .form-control::placeholder {
+        color: var(--beige-color);
+        opacity: 0.7;
+    }
 
-.search-btn:hover i {
-    transform: scale(1.1);
-}
+    .search-form .form-control:focus {
+        box-shadow: none;
+        border-color: var(--beige-color);
+        background: rgba(255,255,255,0.15);
+    }
 
-.search-input::placeholder {
-    color: #6c757d;
-    opacity: 0.8;
-}
+    .search-btn {
+        background: var(--beige-color);
+        color: var(--primary-color);
+        border: none;
+        border-radius: 0 25px 25px 0;
+        padding: 10px 20px;
+        transition: all 0.3s ease;
+    }
 
-.search-icon {
-    background: white;
-    border: none;
-    padding: 0.5rem 0.8rem;
-    border-radius: 20px;
-}
+    .search-btn:hover {
+        background: var(--beige-dark);
+        color: var(--primary-color);
+    }
 
-/* Thay đổi màu nền và style cho navbar */
-.navbar {
-    background: var(--primary-color) !important;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-}
+    /* Responsive adjustments */
+    @media (max-width: 991.98px) {
+        .navbar-nav {
+            margin: 15px 0;
+        }
 
-.navbar-brand {
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    color: var(--beige-color) !important;
-}
+        .search-form {
+            width: 100%;
+            margin-top: 15px;
+        }
 
-.nav-link {
-    font-family: 'Roboto', sans-serif;
-    color: white !important;
-    transition: all 0.3s ease;
-}
+        .nav-link {
+            text-align: center;
+            margin: 5px 0;
+        }
+    }
 
-.nav-link:hover {
-    color: var(--beige-color) !important;
-    transform: translateY(-2px);
-}
+    /* Active link styling */
+    .nav-link.active {
+        background: var(--beige-color);
+        color: var(--primary-color) !important;
+    }
 
-/* Style mới cho search form */
-.search-form .form-control {
-    background: rgba(255,255,255,0.1);
-    border: 1px solid var(--beige-color);
-    color: white;
-}
+    /* Navbar toggler customization */
+    .navbar-toggler {
+        border-color: var(--beige-color);
+        padding: 8px 12px;
+    }
 
-.search-btn {
-    background: var(--beige-color);
-    border: none;
-    color: var(--primary-color);
-}
-
-.search-btn:hover {
-    background: var(--beige-dark);
-}
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(232, 220, 196, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
 </style>

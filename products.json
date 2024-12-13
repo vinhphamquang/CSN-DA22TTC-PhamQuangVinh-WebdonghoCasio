@@ -1,0 +1,568 @@
+{
+    "categories": [
+      {
+        "name": "Đồng Hồ Nam",
+        "products": [
+          {
+            "id": "mtp-1375",
+            "model": "MTP-1375D-7AVDF",
+            "name": "Casio MTP-1375D-7AVDF",
+            "description": "Dây thép không gỉ cao cấp, mặt số trắng tinh tế\nChống nước 50m, kính khoáng cứng\nLịch ngày và thứ tự động",
+            "longDescription": [
+                "Đồng hồ nam Casio MTP-1375D-7AVDF thuộc dòng Standard với thiết kế thanh lịch, sang trọng phù hợp cho các quý ông công sở.",
+                "Mặt số trắng tinh tế với các cọc số La Mã tạo nên vẻ đẹp cổ điển. Kim giờ và cọc số được mạ bạc sáng bóng, dễ dàng xem giờ.",
+                "Dây đeo kim loại được làm từ thép không gỉ 316L cao cấp, độ bền cao và chống ăn mòn tốt. Thiết kế dây đeo 3 mắt xích mang đến cảm giác chắc chắn khi đeo.",
+                "Tính năng lịch ngày và thứ tự động giúp người dùng theo dõi thời gian một cách thuận tiện. Khả năng chống nước 50m cho phép đeo đồng hồ khi rửa tay hoặc đi mưa."
+            ],
+            "features": [
+                "Mặt số trắng với cọc số La Mã",
+                "Dây đeo thép không gỉ 316L",
+                "Lịch ngày và thứ tự động",
+                "Chống nước 50m",
+                "Kim và cọc số mạ bạc",
+                "Kính khoáng cứng chống xước"
+            ],
+            "price": 1990000,
+            "image": "images/men/MTP-1375D-7AVDF.webp",
+            "specs": {
+                "Đường kính mặt": "40mm",
+                "Độ dày": "8.9mm",
+                "Chất liệu vỏ": "Thép không gỉ",
+                "Chất liệu dây": "Thép không gỉ",
+                "Chất liệu mặt kính": "Kính khoáng",
+                "Độ chống nước": "5 ATM (50m)",
+                "Bộ máy": "Quartz",
+                "Pin": "SR626SW",
+                "Chức năng": "Lịch ngày và thứ",
+                "Xuất xứ": "Nhật Bản"
+            }
+          },
+          {
+            "id": "mtp-v002",
+            "model": "MTP-V002L-1AUDF",
+            "name": "Casio MTP-V002L-1AUDF",
+            "description": "Dây da chính hãng màu đen sang trọng\nMặt số đơn giản dễ đọc, kim dạ quang\nChống nước nhẹ, kính cứng chống xước",
+            "longDescription": [
+                "Đồng hồ Casio MTP-V002L-1AUDF là mẫu đồng hồ nam thuộc phân khúc giá tầm trung với thiết kế thanh lịch và chất lượng ổn định.",
+                "Mặt số đen tương phản với các chi tiết màu trắng tạo nên vẻ đẹp nam tính, dễ dàng kết hợp với nhiều trang phục khác nhau.",
+                "Dây đeo bằng da chính hãng màu đen với đường may tỉ mỉ, mang đến cảm giác thoải mái khi đeo và độ bền cao trong quá trình sử dụng.",
+                "Kim dạ quang giúp người dùng dễ dàng xem giờ trong điều kiện thiếu sáng. Khả năng chống nước 30m đáp ứng nhu cầu sử dụng hàng ngày."
+            ],
+            "features": [
+                "Mặt số đen với kim dạ quang",
+                "Dây da chính hãng cao cấp",
+                "Thiết kế đơn giản, dễ đọc",
+                "Chống nước 30m",
+                "Vỏ thép không gỉ bền bỉ",
+                "Kính khoáng chống xước"
+            ],
+            "price": 1290000,
+            "image": "images/men/MTP-V002L-1AUDF.webp",
+            "specs": {
+                "Đường kính mặt": "38mm",
+                "Độ dày": "7.5mm",
+                "Chất liệu vỏ": "Thép không gỉ",
+                "Chất liệu dây": "Dây da chính hãng",
+                "Chất liệu mặt kính": "Kính khoáng",
+                "Độ chống nước": "3 ATM (30m)",
+                "Bộ máy": "Quartz",
+                "Pin": "SR626SW",
+                "Chức năng": "Kim dạ quang",
+                "Xuất xứ": "Nhật Bản"
+            }
+          },
+          {
+            "id": "mtp-1183",
+            "model": "MTP-1183E-7ADF",
+            "name": "Casio MTP-1183E-7ADF",
+            "description": "Dây da nâu sang trọng\nMặt số trắng cổ điển\nLịch ngày tiện lợi",
+            "longDescription": [
+                "Casio MTP-1183E-7ADF là mẫu đồng hồ nam thanh lịch với thiết kế cổ điển, phù hợp cho cả trang phục công sở và dự tiệc.",
+                "Mặt số trắng tinh khôi với các cọc số được đánh dấu rõ ràng, tạo nên vẻ đẹp tối giản nhưng không kém phần sang trọng.",
+                "Dây đeo da nâu cao cấp với đường may tỉ mỉ, tạo cảm giác êm ái khi đeo và dễ dàng phối với nhiều loại trang phục.",
+                "Tính năng lịch ngày được tích hợp tinh tế vào mặt số, giúp người dùng theo dõi ngày tháng một cách thuận tiện."
+            ],
+            "features": [
+                "Mặt số trắng tối giản",
+                "Dây da nâu cao cấp",
+                "Lịch ngày tự động",
+                "Chống nước 30m",
+                "Vỏ thép không gỉ bóng bẩy",
+                "Kính khoáng chống xước"
+            ],
+            "price": 1690000,
+            "image": "images/men/MTP-1183E-7ADF.webp",
+            "specs": {
+                "Đường kính mặt": "39mm",
+                "Độ dày": "8.2mm",
+                "Chất liệu vỏ": "Thép không gỉ",
+                "Chất liệu dây": "Dây da cao cấp",
+                "Chất liệu mặt kính": "Kính khoáng",
+                "Độ chống nước": "3 ATM (30m)",
+                "Bộ máy": "Quartz",
+                "Pin": "SR626SW",
+                "Chức năng": "Lịch ngày",
+                "Xuất xứ": "Nhật Bản"
+            }
+          },
+          {
+            "id": "mtp-v300",
+            "model": "MTP-V300D-7AUDF",
+            "name": "Casio MTP-V300D-7AUDF",
+            "description": "Dây thép bạc sáng bóng\nMặt số đa chức năng\nChronograph 3 mắt",
+            "longDescription": [
+                "MTP-V300D-7AUDF là mẫu đồng hồ chronograph thể thao với thiết kế hiện đại và đa chức năng.",
+                "Mặt số được thiết kế với 3 mắt chronograph, cho phép đo thời gian chính xác đến 1/10 giây. Các kim và cọc số được mạ bạc sáng bóng, tương phản trên nền trắng.",
+                "Dây đeo thép không gỉ với thiết kế mắt xích 3 hàng mang đến vẻ đẹp nam tính và độ bền cao trong sử dụng.",
+                "Khả năng chống nước 50m cho phép đeo đồng hồ khi bơi lội hoặc trong các hoạt động thể thao nhẹ."
+            ],
+            "features": [
+                "Chronograph 3 mắt",
+                "Dây thép không gỉ cao cấp",
+                "Mặt số đa chức năng",
+                "Chống nước 50m",
+                "Kim chronograph chính xác",
+                "Vỏ thép đánh bóng"
+            ],
+            "price": 1890000,
+            "image": "images/men/MTP-V300D-7AUDF.webp",
+            "specs": {
+                "Đường kính mặt": "42mm",
+                "Độ dày": "9.5mm",
+                "Chất liệu vỏ": "Thép không gỉ",
+                "Chất liệu dây": "Thép không gỉ",
+                "Chất liệu mặt kính": "Kính khoáng",
+                "Độ chống nước": "5 ATM (50m)",
+                "Bộ máy": "Quartz",
+                "Pin": "SR626SW",
+                "Chức năng": "Chronograph, Lịch ngày",
+                "Xuất xứ": "Nhật Bản"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Đồng Hồ Nữ",
+        "products": [
+          {
+            "id": "ltp-1095",
+            "model": "LTP-1095E-7ADF",
+            "name": "Casio LTP-1095E-7ADF",
+            "description": "Dây da trắng thanh lịch\nMặt số ánh xà cừ\nĐính đá pha lê sang trọng",
+            "longDescription": [
+                "Đồng hồ Casio LTP-1095E-7ADF là một thiết kế dành cho phái đẹp với vẻ ngoài tinh tế và nữ tính.",
+                "Mặt số được làm từ xà cừ tự nhiên với hiệu ứng ánh sáng đa sắc, kết hợp với 12 viên đá pha lê tại các vị trí giờ tạo nên vẻ đẹp sang trọng.",
+                "Dây đeo da màu trắng với bề mặt vân da tinh tế, phù hợp với mọi trang phục từ công sở đến dự tiệc.",
+                "Vỏ đồng hồ được mạ vàng tinh tế, tạo điểm nhấn sang trọng và đẳng cấp cho người đeo."
+            ],
+            "features": [
+                "Mặt số xà cừ tự nhiên",
+                "12 viên đá pha lê đánh dấu giờ",
+                "Dây da trắng cao cấp",
+                "Vỏ mạ vàng sang trọng",
+                "Chống nước 30m",
+                "Thiết kế nhỏ gọn phù hợp cổ tay nữ"
+            ],
+            "price": 1490000,
+            "image": "images/ladies/LTP-1095E-7ADF.webp",
+            "specs": {
+                "Đường kính mặt": "28mm",
+                "Độ dày": "6.8mm",
+                "Chất liệu vỏ": "Thép không gỉ mạ vàng",
+                "Chất liệu dây": "Dây da cao cấp",
+                "Chất liệu mặt kính": "Kính khoáng",
+                "Độ chống nước": "3 ATM (30m)",
+                "Bộ máy": "Quartz",
+                "Pin": "SR626SW",
+                "Chức năng": "Đính đá pha lê",
+                "Xuất xứ": "Nhật Bản"
+            }
+          },
+          {
+            "id": "ltp-vt01",
+            "model": "LTP-VT01GL-1BUDF",
+            "name": "Casio LTP-VT01GL-1BUDF",
+            "description": "Dây da nâu vintage\nMặt số xanh độc đáo\nThiết kế nhỏ gọn nữ tính",
+            "longDescription": [
+                "LTP-VT01GL-1BUDF là mẫu đồng hồ nữ với thiết kế vintage độc đáo, kết hợp giữa cổ điển và hiện đại.",
+                "Mặt số màu xanh navy sang trọng với các chi tiết mạ vàng tinh tế, tạo nên vẻ đẹp độc đáo và thu hút.",
+                "Dây đeo da nâu vintage với vân da tự nhiên, mang đến phong cách retro thời thượng và cảm giác thoải mái khi đeo.",
+                "Kích thước nhỏ gọn 30mm phù hợp với cổ tay nữ, dễ dàng kết hợp với các phụ kiện khác."
+            ],
+            "features": [
+                "Mặt số xanh navy độc đáo",
+                "Dây da vintage thời thượng",
+                "Kim và cọc số mạ vàng",
+                "Thiết kế nhỏ gọn nữ tính",
+                "Chống nước 30m",
+                "Kính khoáng trong suốt"
+            ],
+            "price": 1690000,
+            "image": "images/ladies/LTP-VT01GL-1BUDF.webp",
+            "specs": {
+                "Đường kính mặt": "30mm",
+                "Độ dày": "7.2mm",
+                "Chất liệu vỏ": "Thép không gỉ",
+                "Chất liệu dây": "Dây da vintage",
+                "Chất liệu mặt kính": "Kính khoáng",
+                "Độ chống nước": "3 ATM (30m)",
+                "Bộ máy": "Quartz",
+                "Pin": "SR626SW",
+                "Chức năng": "Kim dạ quang",
+                "Xuất xứ": "Nhật Bản"
+            }
+          },
+          {
+            "id": "ltp-1274",
+            "model": "LTP-1274D-7ADF",
+            "name": "Casio LTP-1274D-7ADF",
+            "description": "Dây thép không gỉ mảnh\nMặt số trắng tinh tế\nĐính đá pha lê 12 múi giờ",
+            "longDescription": [
+                "LTP-1274D-7ADF là mẫu đồng hồ nữ sang trọng với điểm nhấn là 12 viên đá pha lê đánh dấu giờ.",
+                "Mặt số trắng tinh khôi với các chi tiết mạ bạc sáng bóng, tạo n����n vẻ đẹp thanh lịch và quý phái.",
+                "Dây đeo thép không gỉ mảnh mai với thiết kế mắt xích tinh tế, tôn lên vẻ đẹp nữ tính của người đeo.",
+                "Kích thước 29mm cùng độ dày chỉ 7mm giúp đồng hồ trở nên nhẹ nhàng và thoải mái khi đeo."
+            ],
+            "features": [
+                "12 viên đá pha lê đánh dấu giờ",
+                "Dây thép không gỉ mảnh mai",
+                "Mặt số trắng tinh khôi",
+                "Thiết kế siêu mỏng",
+                "Chống nước 30m",
+                "Vỏ thép mạ bạc sáng bóng"
+            ],
+            "price": 1590000,
+            "image": "images/ladies/LTP-1274D-7ADF.webp",
+            "specs": {
+                "Đường kính mặt": "29mm",
+                "Độ dày": "7.0mm",
+                "Chất liệu vỏ": "Thép không gỉ",
+                "Chất liệu dây": "Thép không gỉ",
+                "Chất liệu mặt kính": "Kính khoáng",
+                "Độ chống nước": "3 ATM (30m)",
+                "Bộ máy": "Quartz",
+                "Pin": "SR626SW",
+                "Chức năng": "Đính đá pha lê 12 múi giờ",
+                "Xuất xứ": "Nhật Bản"
+            }
+          },
+          {
+            "id": "ltp-v007",
+            "model": "LTP-V007L-7B2UDF",
+            "name": "Casio LTP-V007L-7B2UDF",
+            "description": "Dây da nâu nhẹ nhàng\nMặt số trắng đơn giản\nKim xanh nổi bật",
+            "longDescription": [
+                "LTP-V007L-7B2UDF là mẫu đồng hồ nữ đơn giản nhưng tinh tế với điểm nhấn là bộ kim màu xanh độc đáo.",
+                "Mặt số trắng tối giản với các cọc số thanh mảnh, tạo nên vẻ đẹp nhẹ nhàng và dễ đọc thời gian.",
+                "Dây đeo da nâu với bề mặt vân da tự nhiên, mang đến cảm giác thoải mái và phong cách thời trang.",
+                "Thiết kế nhỏ gọn với đường kính 27mm phù hợp với mọi cổ tay nữ, dễ dàng kết hợp với nhiều phong cách thời trang."
+            ],
+            "features": [
+                "Kim màu xanh độc đáo",
+                "Dây da nâu tự nhiên",
+                "Mặt số trắng tối giản",
+                "Thiết kế siêu mỏng",
+                "Chống nước 30m",
+                "Vỏ thép không gỉ"
+            ],
+            "price": 1290000,
+            "image": "images/ladies/LTP-V007L-7B2UDF.webp",
+            "specs": {
+                "Đường kính mặt": "27mm",
+                "Độ dày": "6.5mm",
+                "Chất liệu vỏ": "Thép không gỉ",
+                "Chất liệu dây": "Dây da cao cấp",
+                "Chất liệu mặt kính": "Kính khoáng",
+                "Độ chống nước": "3 ATM (30m)",
+                "Bộ máy": "Quartz",
+                "Pin": "SR626SW",
+                "Chức năng": "Kim xanh nổi bật",
+                "Xuất xứ": "Nhật Bản"
+            }
+          }
+        ]
+      },
+      {
+        "name": "G-SHOCK",
+        "products": [
+          {
+            "id": "ga-2100",
+            "model": "GA-2100-1A1DR",
+            "name": "G-Shock GA-2100-1A1DR",
+            "description": "Carbon Core Guard\nThiết kế octagon độc đáo\nChống sốc chuẩn G-SHOCK",
+            "longDescription": [
+                "G-Shock GA-2100-1A1DR, còn được gọi là 'CasiOak', là một trong những mẫu đồng hồ được yêu thích nhất của Casio với thiết kế octagon độc đáo.",
+                "Sử dụng công nghệ Carbon Core Guard mới nhất, khung vỏ được gia cố bằng sợi carbon siêu nhẹ và bền, giúp đồng hồ vừa nhẹ vừa chắc chắn.",
+                "Mặt số ana-digi kết hợp kim và số điện tử, cho phép hiển thị nhiều thông tin cùng lúc. Các chức năng đa dạng bao gồm đèn LED, bấm giờ, báo thức và lịch tự động.",
+                "Thiết kế all-black stealth mang đến vẻ đẹp hiện đại và nam tính. Dây đeo bằng nhựa cao cấp với độ bền cao và thoải mái khi đeo."
+            ],
+            "features": [
+                "Công nghệ Carbon Core Guard",
+                "Thiết kế octagon độc đáo",
+                "Chống sốc tiêu chuẩn G-SHOCK",
+                "Chống nước 200m",
+                "Đèn LED siêu sáng",
+                "Màn hình ana-digi đa chức năng"
+            ],
+            "price": 3990000,
+            "image": "images/g-shock/GA-2100-1A1DR.webp",
+            "specs": {
+                "Đường kính mặt": "49.4mm",
+                "Độ dày": "14.2mm",
+                "Chất liệu vỏ": "Nhựa composite & Thép không gỉ",
+                "Chất liệu dây": "Nhựa cao cấp",
+                "Chất liệu mặt kính": "Kính khoáng cứng",
+                "Độ chống nước": "20 ATM (200m)",
+                "Bộ máy": "Module điện tử",
+                "Pin": "CR2032",
+                "Chức năng": "Ana-digi, Đèn LED",
+                "Xuất xứ": "Nhật Bản"
+            }
+          },
+          {
+            "id": "dw-5600",
+            "model": "DW-5600BB-1DR",
+            "name": "G-Shock DW-5600BB-1DR",
+            "description": "Thiết kế vuông cổ điển\nFull black stealth\nChống nước 200m",
+            "longDescription": [
+                "DW-5600BB-1DR là phiên bản hiện đại của mẫu G-Shock đầu tiên, giữ nguyên thiết kế vuông huyền thoại nhưng được nâng cấp với tông màu all-black hiện đại.",
+                "Màn hình điện tử với độ tương phản cao, dễ dàng đọc trong mọi điều kiện ánh sáng. Đèn EL Backlight cung cấp khả năng chiếu sáng mạnh mẽ trong bóng tối.",
+                "Khả năng chống sốc và chống nước 200m đảm bảo đồng hồ hoạt động tốt trong mọi điều kiện khắc nghiệt.",
+                "Các chức năng cơ bản như bấm giờ, báo thức, lịch tự động được tích hợp đầy đủ, đáp ứng nhu cầu sử dụng hàng ngày."
+            ],
+            "features": [
+                "Thiết kế vuông huyền thoại",
+                "Phối màu all-black hiện đại",
+                "Đèn EL Backlight",
+                "Chống sốc & chống nước 200m",
+                "Bấm giờ 1/100 giây",
+                "Pin tuổi thọ cao"
+            ],
+            "price": 2990000,
+            "image": "images/g-shock/DW-5600BB-1DR.webp",
+            "specs": {
+                "Đường kính mặt": "49.4mm",
+                "Độ dày": "14.2mm",
+                "Chất liệu vỏ": "Nhựa composite & Thép không gỉ",
+                "Chất liệu dây": "Nhựa cao cấp",
+                "Chất liệu mặt kính": "Kính khoáng cứng",
+                "Độ chống nước": "20 ATM (200m)",
+                "Bộ máy": "Module điện tử",
+                "Pin": "CR2032",
+                "Chức năng": "Đèn EL Backlight, Bấm giờ",
+                "Xuất xứ": "Nhật Bản"
+            }
+          },
+          {
+            "id": "gba-800",
+            "model": "GBA-800-1ADR",
+            "name": "G-Shock GBA-800-1ADR",
+            "description": "Kết nối Bluetooth\nĐo nhịp tim và bước chạy\nPin năng lượng mặt trời",
+            "longDescription": [
+                "GBA-800-1ADR là mẫu G-Shock thông minh với khả năng kết nối Bluetooth và theo dõi các hoạt động thể thao.",
+                "Tích hợp cảm biến gia tốc 3 trục cho phép đếm bước chân chính xác và theo dõi cường độ tập luyện. Kết nối với ứng dụng G-Shock Connected để phân tích chi tiết dữ liệu.",
+                "Màn hình kỹ thuật số kết hợp kim analog giúp hiển thị đa dạng thông tin. Đèn LED Super Illuminator cung cấp khả năng chiếu sáng mạnh mẽ trong điều kiện thiếu sáng.",
+                "Vỏ máy được thiết kế chống sốc theo tiêu chuẩn G-SHOCK, kết hợp với khả năng chống nước 200m, phù hợp cho mọi hoạt động thể thao."
+            ],
+            "features": [
+                "Kết nối Bluetooth với điện thoại",
+                "Đếm bước và theo dõi vận động",
+                "Đèn LED Super Illuminator",
+                "Chống sốc và chống nước 200m",
+                "Pin năng lượng mặt trời",
+                "5 báo thức độc lập"
+            ],
+            "price": 4290000,
+            "image": "images/g-shock/GBA-800-1ADR.webp",
+            "specs": {
+                "Đường kính mặt": "48.6mm",
+                "Độ dày": "15.5mm",
+                "Chất liệu vỏ": "Nhựa composite & Thép không gỉ",
+                "Chất liệu dây": "Nhựa cao cấp",
+                "Chất liệu mặt kính": "Kính khoáng cứng",
+                "Độ chống nước": "20 ATM (200m)",
+                "Bộ máy": "Module điện tử",
+                "Pin": "Năng lượng mặt trời",
+                "Chức năng": "Bluetooth, Đếm bước, Đèn LED",
+                "Xuất xứ": "Nhật Bản"
+            }
+          },
+          {
+            "id": "gw-b5600",
+            "model": "GW-B5600-2DR",
+            "name": "G-Shock GW-B5600-2DR",
+            "description": "Sóng radio 6 trạm\nNăng lượng mặt trời\nKết nối smartphone",
+            "longDescription": [
+                "GW-B5600-2DR là phiên bản hiện đại của dòng vuông huyền thoại, tích hợp công nghệ Tough Solar và Multi Band 6.",
+                "Công nghệ Tough Solar cho phép đồng hồ tự sạc dưới mọi điều kiện ánh sáng, kết hợp với khả năng hiệu chỉnh thời gian tự động qua sóng radio từ 6 trạm phát trên thế giới.",
+                "Kết nối Bluetooth với điện thoại thông minh cho phép điều chỉnh các cài đặt dễ dàng và đồng bộ thời gian chính xác tuyệt đối.",
+                "Thiết kế cổ điển được nâng cấp với màn hình STN LCD có độ tương phản cao, dễ dàng xem trong mọi góc độ."
+            ],
+            "features": [
+                "Tough Solar (năng lượng mặt trời)",
+                "Multi Band 6 (sóng radio)",
+                "Kết nối Bluetooth",
+                "Màn hình STN LCD",
+                "200m chống nước",
+                "Chống sốc tiêu chuẩn G-SHOCK"
+            ],
+            "price": 4990000,
+            "image": "images/g-shock/GW-B5600-2DR.webp",
+            "specs": {
+                "Đường kính mặt": "42.8mm",
+                "Độ dày": "13.4mm",
+                "Chất liệu vỏ": "Nhựa cao cấp",
+                "Chất liệu dây": "Nhựa cao cấp",
+                "Chất liệu mặt kính": "Kính khoáng cứng",
+                "Độ chống nước": "20 ATM (200m)",
+                "Bộ máy": "Module điện tử",
+                "Pin": "Tough Solar",
+                "Chức năng": "Multi Band 6, Bluetooth",
+                "Xuất xứ": "Nhật Bản"
+            }
+          }
+        ]
+      },
+      {
+        "name": "VINTAGE",
+        "products": [
+          {
+            "id": "a168",
+            "model": "A168WA-1WDF",
+            "name": "Casio Vintage A168WA-1WDF",
+            "description": "Dây đeo kim loại classic\nĐèn nền Electro Luminescence\nBáo thức đa chức năng",
+            "longDescription": [
+                "A168WA-1WDF là một biểu tượng của dòng Casio Vintage với thiết kế retro đặc trưng của thập niên 80.",
+                "Mặt số điện tử hiển thị đầy đủ thông tin về giờ, phút, giây, ngày tháng và thứ. Đèn nền EL giúp dễ dàng xem giờ trong bóng tối.",
+                "Dây đeo kim loại mảnh với thiết kế classic tạo nên vẻ đẹp hoài cổ, phù hợp với xu hướng thời trang vintage đang thịnh hành.",
+                "Tích hợp các chức năng thiết yếu như báo thức, bấm giờ, lịch tự động, đáp ứng nhu cầu sử dụng hàng ngày."
+            ],
+            "features": [
+                "Thiết kế retro thập niên 80",
+                "Dây đeo kim loại classic",
+                "Đèn nền Electro Luminescence",
+                "Báo thức đa chức năng",
+                "Lịch tự động",
+                "Pin tuổi thọ cao"
+            ],
+            "price": 1290000,
+            "image": "images/vintage/A168WA-1WDF.webp",
+            "specs": {
+                "Đường kính mặt": "38.6mm",
+                "Độ dày": "10.5mm",
+                "Chất liệu vỏ": "Nhựa composite",
+                "Chất liệu dây": "Kim loại",
+                "Chất liệu mặt kính": "Kính khoáng cứng",
+                "Độ chống nước": "Đi mưa nhẹ",
+                "Bộ máy": "Module điện tử",
+                "Pin": "CR2032",
+                "Chức năng": "Đèn EL Backlight, Bấm giờ",
+                "Xuất xứ": "Nhật Bản"
+            }
+          },
+          {
+            "id": "f91w",
+            "model": "F91W-1DG",
+            "name": "Casio F91W-1DG",
+            "description": "Thiết kế nhỏ gọn\nDây nhựa bền bỉ\nStopwatch 1/100 giây",
+            "longDescription": [
+                "F91W-1DG là mẫu đồng hồ huyền thoại của Casio với thiết kế đơn giản, gọn nhẹ và độ bền cao.",
+                "Màn hình LCD rõ ràng hiển thị đầy đủ thông tin thời gian, với khả năng chuyển đổi giữa định dạng 12/24 giờ.",
+                "Dây đeo nhựa cao cấp với độ bền cao, chống nước nhẹ, phù hợp cho việc sử dụng hàng ngày.",
+                "Tích hợp tính năng Stopwatch 1/100 giây chính xác, cùng với báo thức hàng ngày và lịch tự động."
+            ],
+            "features": [
+                "Thiết kế nhỏ gọn, nhẹ nhàng",
+                "Màn hình LCD rõ ràng",
+                "Stopwatch 1/100 giây",
+                "Báo thức hàng ngày",
+                "Dây đeo nhựa bền bỉ",
+                "Pin tuổi thọ 7 năm"
+            ],
+            "price": 890000,
+            "image": "images/vintage/F91W-1DG.webp",
+            "specs": {
+                "Đường kính mặt": "38.6mm",
+                "Độ dày": "10.5mm",
+                "Chất liệu vỏ": "Nhựa composite",
+                "Chất liệu dây": "Nhựa cao cấp",
+                "Chất liệu mặt kính": "Kính khoáng cứng",
+                "Độ chống nước": "Đi mưa nhẹ",
+                "Bộ máy": "Module điện tử",
+                "Pin": "CR2032",
+                "Chức năng": "Đèn EL Backlight, Bấm giờ",
+                "Xuất xứ": "Nhật Bản"
+            }
+          },
+          {
+            "id": "a700",
+            "model": "A700W-1ADF",
+            "name": "Casio Vintage A700W-1ADF",
+            "description": "Siêu mỏng 6mm\nDây kim loại mesh\nMàn hình LCD cao cấp",
+            "longDescription": [
+                "A700W-1ADF là mẫu đồng hồ Vintage siêu mỏng với độ dày chỉ 6mm, mang đến cảm giác nhẹ nhàng và thanh lịch trên cổ tay.",
+                "Dây đeo dạng lưới (mesh) bằng thép không gỉ với thiết kế mắt nhỏ tinh tế, tạo nên vẻ đẹp sang trọng và hiện đại.",
+                "Màn hình LCD cao cấp với độ tương phản cao, hiển thị rõ ràng trong mọi điều kiện ánh sáng. Đèn nền LED giúp dễ dàng xem giờ trong bóng tối.",
+                "Tích hợp các tính năng cơ bản như báo thức hàng ngày, lịch tự động và bấm giờ, đáp ứng nhu cầu sử dụng hàng ngày."
+            ],
+            "features": [
+                "Thiết kế siêu mỏng 6mm",
+                "Dây đeo mesh cao cấp",
+                "Màn hình LCD độ tương phản cao",
+                "Đèn nền LED",
+                "Chống nước nhẹ",
+                "Pin tuổi thọ 7 năm"
+            ],
+            "price": 1890000,
+            "image": "images/vintage/A700W-1ADF.webp",
+            "specs": {
+                "Đường kính mặt": "38.6mm",
+                "Độ dày": "6.0mm",
+                "Chất liệu vỏ": "Thép không gỉ",
+                "Chất liệu dây": "Thép không gỉ dạng lưới",
+                "Chất liệu mặt kính": "Nhựa acrylic",
+                "Độ chống nước": "Đi mưa nhẹ",
+                "Bộ máy": "Module điện tử",
+                "Pin": "CR1616",
+                "Chức năng": "Báo thức, Lịch tự động",
+                "Xuất xứ": "Nhật Bản"
+            }
+          },
+          {
+            "id": "b650",
+            "model": "B650WD-1ADF",
+            "name": "Casio Vintage B650WD-1ADF",
+            "description": "Màn hình ma trận LED\nDây thép không gỉ\nĐa chức năng",
+            "longDescription": [
+                "B650WD-1ADF nổi bật với màn hình ma trận LED có khả năng hiển thị text và biểu tượng đa dạng, mang đến trải nghiệm độc đáo cho người dùng.",
+                "Thiết kế hoài cổ với viền vuông đặc trưng của dòng Vintage, kết hợp với dây đeo thép không gỉ mang đến vẻ đẹp cổ điển nhưng không kém phần hiện đại.",
+                "Tích hợp nhiều tính năng hữu ích như đồng hồ bấm giờ, báo thức đa kênh, lịch tự động và đèn nền LED siêu sáng.",
+                "Dây đeo thép không gỉ với thiết kế mắt xích truyền thống, dễ dàng điều chỉnh độ dài và thoải mái khi đeo."
+            ],
+            "features": [
+                "Màn hình ma trận LED",
+                "Dây thép không gỉ truyền thống",
+                "5 chế độ báo thức",
+                "Bấm giờ 1/100 giây",
+                "Lịch tự động",
+                "Đèn nền LED"
+            ],
+            "price": 1690000,
+            "image": "images/vintage/B650WD-1ADF.webp",
+            "specs": {
+                "Đường kính mặt": "38.9mm",
+                "Độ dày": "10.5mm",
+                "Chất liệu vỏ": "Thép không gỉ",
+                "Chất liệu dây": "Thép không gỉ",
+                "Chất liệu mặt kính": "Nhựa acrylic",
+                "Độ chống nước": "Đi mưa nhẹ",
+                "Bộ máy": "Module điện tử",
+                "Pin": "CR2016",
+                "Chức năng": "Ma trận LED, Đa báo thức",
+                "Xuất xứ": "Nhật Bản"
+            }
+          }
+        ]
+      }
+    ]
+  }

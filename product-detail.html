@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm - Casio Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1B365D;
+            --beige-color: #E8DCC4;
+            --beige-dark: #D4C5A9;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--beige-color) 0%, #fff 100%);
+            min-height: 100vh;
+        }
+
+        .product-title {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-model {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-price {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 1rem 0;
+            padding: 0.5rem 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .product-description {
+            white-space: pre-line;
+            line-height: 1.8;
+            color: #444;
+            margin: 1.5rem 0;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-image:hover {
+            transform: scale(1.02);
+        }
+
+        .specs-table {
+            background: white;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .specs-table h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+        }
+
+        .table {
+            margin-bottom: 0;
+        }
+
+        .table th {
+            width: 40%;
+            background-color: #f8f9fa;
+        }
+
+        .btn-buy {
+            background: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+
+        .btn-buy:hover {
+            background: var(--beige-dark);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .related-products {
+            margin-top: 4rem;
+        }
+
+        .related-title {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .btn-back {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background-color: var(--beige-color);
+            color: var(--primary-color);
+            transform: translateX(-5px);
+        }
+
+        .product-long-description p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
+        .product-features ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .product-features li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .product-features li:before {
+            content: "✓";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+
+    <main class="container py-5">
+        <div class="mb-4">
+            <a href="product.html" class="btn btn-back">
+                <i class="fas fa-arrow-left me-2"></i>
+                Quay lại
+            </a>
+        </div>
+
+        <div class="row d-flex align-items-start">
+            <div class="col-md-5">
+                <div class="position-sticky" style="top: 2rem;">
+                    <img id="product-image" src="" alt="" class="product-image img-fluid">
+                </div>
+            </div>
+            
+            <div class="col-md-7">
+                <h1 id="product-title" class="product-title"></h1>
+                <div id="product-model" class="product-model"></div>
+                <div id="product-price" class="product-price"></div>
+                
+                <p id="product-description" class="product-description"></p>
+                
+                <div class="product-long-description mt-4">
+                    <h4>Mô tả chi tiết</h4>
+                    <div id="long-description"></div>
+                </div>
+                
+                <div class="product-features mt-4">
+                    <h4>Tính năng nổi bật</h4>
+                    <ul id="features-list"></ul>
+                </div>
+                
+                <div class="specs-table mt-4">
+                    <h4>Thông số kỹ thuật</h4>
+                    <table class="table table-bordered">
+                        <tbody id="specs-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#nav-placeholder").load("nav.html");
+
+            // Lấy ID sản phẩm từ URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+
+            // Format giá tiền
+            function formatPrice(price) {
+                return new Intl.NumberFormat('vi-VN').format(price) + '₫';
+            }
+
+            // Lấy dữ liệu sản phẩm từ products.json
+            fetch('products.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Tìm sản phẩm theo ID
+                    let foundProduct = null;
+                    data.categories.forEach(category => {
+                        const product = category.products.find(p => p.id === productId);
+                        if (product) {
+                            foundProduct = product;
+                        }
+                    });
+
+                    if (foundProduct) {
+                        // Cập nhật thông tin sản phẩm
+                        document.title = `${foundProduct.name} - Casio Store`;
+                        $('#product-image').attr('src', foundProduct.image);
+                        $('#product-title').text(foundProduct.name);
+                        $('#product-model').text(`Model: ${foundProduct.model}`);
+                        $('#product-price').text(formatPrice(foundProduct.price));
+                        $('#product-description').text(foundProduct.description);
+
+                        // Hiển thị thông số kỹ thuật
+                        let specsHtml = '';
+                        for (let [key, value] of Object.entries(foundProduct.specs)) {
+                            specsHtml += `
+                                <tr>
+                                    <th scope="row">${key}</th>
+                                    <td>${value}</td>
+                                </tr>
+                            `;
+                        }
+                        $('#specs-body').html(specsHtml);
+
+                        // Hiển thị mô tả chi tiết
+                        if (foundProduct.longDescription) {
+                            const longDescHtml = foundProduct.longDescription
+                                .map(para => `<p>${para}</p>`)
+                                .join('');
+                            $('#long-description').html(longDescHtml);
+                        }
+                        
+                        // Hiển thị tính năng nổi bật
+                        if (foundProduct.features) {
+                            const featuresHtml = foundProduct.features
+                                .map(feature => `<li>${feature}</li>`)
+                                .join('');
+                            $('#features-list').html(featuresHtml);
+                        }
+                    } else {
+                        alert('Không tìm thấy sản phẩm');
+                        window.location.href = 'product.html';
+                    }
+                })
+                .catch(error => {
+                    console.error('Lỗi:', error);
+                    alert('Không thể tải thông tin sản phẩm');
+                });
+        });
+    </script>
+</body>
+</html> 
