@@ -472,6 +472,84 @@
                 width: 100%;
             }
         }
+
+        /* Featured Products Title Styling */
+        .featured-title-wrapper {
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .featured-title {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            padding: 0 30px;
+        }
+
+        .featured-title::before,
+        .featured-title::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-color), transparent);
+        }
+
+        .featured-title::before {
+            left: -30px;
+            transform: translateX(-100%);
+        }
+
+        .featured-title::after {
+            right: -30px;
+            transform: translateX(100%);
+            background: linear-gradient(90deg, transparent, var(--primary-color));
+        }
+
+        .featured-line {
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+            margin: 0 auto;
+            margin-top: -10px;
+        }
+
+        /* Animation cho tiêu đề */
+        .featured-title {
+            animation: fadeInDown 1s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hiệu ứng hover cho tiêu đề */
+        .featured-title:hover {
+            color: var(--beige-dark);
+            transition: color 0.3s ease;
+        }
+
+        .featured-title:hover::before,
+        .featured-title:hover::after {
+            background: linear-gradient(90deg, var(--beige-dark), transparent);
+        }
+
+        .featured-title:hover + .featured-line {
+            background: linear-gradient(90deg, transparent, var(--beige-dark), transparent);
+            transition: background 0.3s ease;
+        }
     </style>
 </head>
 <body>
@@ -545,6 +623,10 @@
         </header>
 
         <main class="container py-5">
+            <div class="featured-title-wrapper text-center mb-4">
+                <h2 class="featured-title">Sản Phẩm Nổi Bật</h2>
+                <div class="featured-line"></div>
+            </div>
             <div class="row g-4">
                 <div class="col-md-3">
                     <div class="card h-100">
@@ -556,7 +638,14 @@
                             <div class="divider"></div>
                             <p class="card-text">Phiên bản đặc biệt với vỏ thép không gỉ mạ vàng, kết nối Bluetooth</p>
                             <p class="price">15.990.000đ</p>
-                            <a href="product.html?id=123" class="btn btn-custom">Khám phá ngay</a>
+                            <button class="btn btn-primary" onclick="addToCart({
+                                id: 2,
+                                name: 'Sản phẩm khác',
+                                price: 200000,
+                                image: 'path/to/other-image.jpg'
+                            })">
+                                <i class="fas fa-cart-plus"></i> Thêm vào giỏ
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -571,7 +660,14 @@
                             <div class="divider"></div>
                             <p class="card-text">Đồng hồ G-Shock với thiết kế mạnh mẽ, chống sốc, chống nước 200m.</p>
                             <p class="price">2.890.000đ</p>
-                            <a href="product.html?id=123" class="btn btn-custom">Khám phá ngay</a>
+                            <button class="btn btn-primary" onclick="addToCart({
+                                id: 2,
+                                name: 'Sản phẩm khác',
+                                price: 200000,
+                                image: 'path/to/other-image.jpg'
+                            })">
+                                <i class="fas fa-cart-plus"></i> Thêm vào giỏ
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -586,7 +682,14 @@
                             <div class="divider"></div>
                             <p class="card-text">Đồng h Edifice phong cách thể thao sang trọng, mặt kính sapphire.</p>
                             <p class="price">4.590.000đ</p>
-                            <a href="product.html?id=123" class="btn btn-custom">Khám phá ngay</a>
+                            <button class="btn btn-primary" onclick="addToCart({
+                                id: 2,
+                                name: 'Sản phẩm khác',
+                                price: 200000,
+                                image: 'path/to/other-image.jpg'
+                            })">
+                                <i class="fas fa-cart-plus"></i> Thêm vào giỏ
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -601,7 +704,14 @@
                             <div class="divider"></div>
                             <p class="card-text">Đồng hồ Vintage điện tử cổ điển với thiết kế hoài cổ.</p>
                             <p class="price">1.290.000đ</p>
-                            <a href="product.html?id=123" class="btn btn-custom">Khám phá ngay</a>
+                            <button class="btn btn-primary" onclick="addToCart({
+                                id: 2,
+                                name: 'Sản phẩm khác',
+                                price: 200000,
+                                image: 'path/to/other-image.jpg'
+                            })">
+                                <i class="fas fa-cart-plus"></i> Thêm vào giỏ
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -611,23 +721,11 @@
 
     <div class="butter">
         <div class="container py-4">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>Về chúng tôi</h5>
-                    <p>Chuyên cung cấp đồng hồ Casio chính hãng với giá tốt nhất thị trường</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Liên hệ</h5>
-                    <p>Email: info@casiostore.com</p>
-                    <p>Hotline: 1900 1234</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Theo dõi chúng tôi</h5>
-                    <div class="social-links">
-                        <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center">
+                    <h5>Tên sinh viên: Phạm Quang Vinh</h5>
+                    <h5>MSSV: 110122207</h5>
+                    <h5>Đề tài: Thiết kế website giới thiệu đồng hồ Casio</h5>
                 </div>
             </div>
         </div>
