@@ -292,6 +292,7 @@
                             <span>Tổng cộng:</span>
                             <span id="total">0₫</span>
                         </div>
+                        <div id="message" style="color: red; font-weight: bold;"></div>
                         <button type="submit" class="btn btn-custom" form="checkout-form">
                             Đặt hàng
                         </button>
@@ -315,10 +316,14 @@
             const cart = JSON.parse(localStorage.getItem('cart')) || [];
             const orderItems = document.getElementById('order-items');
             
+            
             if (!orderItems) return;
 
             if (cart.length === 0) {
-                window.location.href = 'product.html';
+                orderItems.innerHTML = '';
+                
+                document.getElementById('subtotal').textContent = '0₫';
+                document.getElementById('total').textContent = '0₫';
                 return;
             }
 
@@ -365,6 +370,7 @@
             const shipping = 30000;
             document.getElementById('subtotal').textContent = formatPrice(subtotal);
             document.getElementById('total').textContent = formatPrice(subtotal + shipping);
+            message.textContent = '';
 
               // Thêm sự kiện cho nút xóa
               document.querySelectorAll('.btn-delete').forEach(button => {
