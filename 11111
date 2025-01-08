@@ -1,0 +1,8 @@
+function filterByCategory(category) {
+    fetch(`http://localhost:3000/api/products/${category}`)
+        .then(response => response.json())
+        .then(data => {
+            // Cập nhật giao diện với sản phẩm đã lọc
+            displayProducts(data);
+        });
+}
